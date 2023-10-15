@@ -1,7 +1,7 @@
 /* header */
 header {
     min-height: 70vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/about-us.jpg") center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../media/pictures/about-us.jpg") center/cover no-repeat fixed;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
