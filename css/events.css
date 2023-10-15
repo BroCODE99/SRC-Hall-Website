@@ -1,0 +1,54 @@
+/* header */
+header {
+    min-height: 70vh;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/Sports-Pictures.jpg") center/cover no-repeat fixed; */
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------- */
+
+/* Media Queries */
+@media screen and (min-width: 540px){
+    .navbar-nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+    .banner-title{
+        font-size: 6rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+   
+  
+}
+
+@media screen and (min-width: 992px){
+ 
+}
+
+@media screen and (min-width: 1200px){
+   
+}
