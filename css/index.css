@@ -32,8 +32,8 @@ img {
 
 header {
   min-height: 90vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../media/videos/bannervideo.gif") center/cover no-repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../media/pictures/3.png") center/cover no-repeat fixed;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
@@ -96,7 +96,8 @@ header {
   color: #ffffff;
 }
 .banner-title {
-  font-size: 6rem;
+  font-size: 5rem;
+  line-height: 1;
 }
 .welcome-text {
   font-size: 1.5rem;
