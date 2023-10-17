@@ -27,7 +27,7 @@
     <header>
       <nav class = "navbar">
         <div class = "container">
-          <div> <a href = "index.php" class = "navbar-brand"><img src="media/logos/srchh.png" alt="logo"></a> </div>
+          <div> <a href = "index.php" class = "navbar-brand"><img src="media/logos/srch1.png" alt="logo"></a> </div>
           <div class = "navbar-nav">
             <a id="active-link" href = "index.php">home</a>
             <a href = "other_pages/news_feed.php">news feed</a>
@@ -41,13 +41,13 @@
       </nav>
       <div class = "banner">
         <div class = "container">
-          <h4 class = "banner-title" >welcome to</h4>
+          <h4 class = "welcome-text" >WELCOME TO</h4>
           <h4 class = "banner-title">The home of  the Innovators</h4>
           <p>we exceeding expectations...</p>
-          <!-- <div class="banner-btn">
-            <a href="#" class="explore-btn">EXPLORE</a>
-            <a href="#" class="watch-video-btn">WATCH THE VIDEO <i class = "fas fa-play-circle" ></i></a>
-          </div> -->
+          <div class="banner-btn">
+            <a href="#" class="primary-btn">WATCH THE VIDEO <i class = "fas fa-play-circle" ></i> </a>
+            <a href="#" class="secondary-btn">BROWSE GALLERY </i></a>
+          </div>
         </div>
       </div>
     </header>
@@ -60,9 +60,195 @@
    
 
 
+<!--  being-innovator-wrapper -->
+
+      <section class="being-an-innovator-wrapper">
+        <h2>Being an Innovator</h2>
+        <hr>
+        <p>
+          At the SRC Hall, we provide the most maintained, decent, attractive and comfortable accommodation facility for our students. We also ensure that students get value for money for services rendered at the Hall. In addition, we provide well maintained community oriented facilities where residents and staff are empowered to learn, innovate and succeed in achieving personal and institutional objectives.
+        </p>
+        <a href="#" class="primary-btn"> MORE </a>
+      </section>
+<!-- ---------------------------------------------------------------------- -->
 
 
+<!--  being-innovator-wrapper -->
 
+      <section class="core-values-wrapper">
+        <h2>Core Values</h2>
+        <hr>
+        <div class="core-values">
+          <div class="item">
+            <p><span>S</span> - Service </p>
+            <p><span>R</span> - Respect </p>
+            <p><span>S</span> - Co-operation </p>
+          </div>
+
+          <div class="item">
+            <p><span>H</span> - Honesty </p>
+            <p><span>A</span> - Accessibilty </p>
+            <p><span>L</span> - Leadership </p>
+            <p><span>L</span> - Loyalty </p>
+          </div>
+        </div>
+      </section>
+    
+  <!-- ----------------------------------------------------------------------------- -->
+
+      <section class="news-and-events-container">
+        <section class="news-and-events-wrapper">
+          <hr>
+          <h2 class="header-text"> News &amp; Events </h2>
+          <!-- news -->
+          <div class="news-wrapper">
+            <h4> <i class="fas fa-square" ></i> LATEST NEWS </h4>
+            <section>
+              <!--  -->
+              <div class="card">
+              <a href="#">
+                <img src="media/pictures/about-us.jpg" alt="pic">
+                <h3>Collection of books at the hall and on campus</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
+                </a>
+              </div>
+              <!--  -->
+
+              <!--  -->
+              <div class="card">
+                <a href="#">
+                <img src="media/pictures/frontview.jpeg" alt="pic">
+                <h3>Collection of books</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
+                </a>
+              </div>
+              <!--  -->
+
+              <!--  -->
+              <div class="card">
+              <a href="#">
+                <img src="media/pictures/about-us.jpg" alt="pic">
+                <h3>Collection of books</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
+                </a>
+              </div>
+              <!--  -->
+
+              <!--  -->
+              <div class="card">
+              <a href="#">
+                <img src="media/pictures/about-us.jpg" alt="pic">
+                <h3>Collection of books</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
+                </a>
+              </div>
+              <!--  -->
+
+              <!--  -->
+              <div class="card">
+              <a href="#">
+                <img src="media/pictures/about-us.jpg" alt="pic">
+                <h3>Collection of books</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
+                </a>
+              </div>
+              <!--  -->
+
+              <!--  -->
+              <div class="card">
+              <a href="#">
+                <img src="media/pictures/about-us.jpg" alt="pic">
+                <h3>Collection of books</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
+                </a>
+              </div>
+              <!--  -->
+
+            </section>
+
+            
+            <a href="#" class="primary-btn" >VIEW MORE STORIES</a>
+
+          </div>
+
+          <!-- end of news -->
+          <!-- -------------------------------------------------------------------- -->
+
+          <!-- events -->
+          <div class="events-wrapper">
+            <h4> <i class="fas fa-square" ></i> UPCOMING EVENTS</h4>
+            <section>
+                <!--  -->
+                <div class="card">
+                <a href="#">
+                  <img src="media/pictures/frontview.jpeg" alt="pic">
+                  <h3>Collection of books</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
+                  </a>
+                </div>
+                <!--  -->
+
+                <!--  -->
+                <div class="card">
+                  <a href="#">
+                  <img src="media/pictures/frontview.jpeg" alt="pic">
+                  <h3>Collection of books</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
+                  </a>
+                </div>
+                <!--  -->
+
+                <!--  -->
+                <div class="card">
+                <a href="#">
+                  <img src="media/pictures/frontview.jpeg" alt="pic">
+                  <h3>Collection of books</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
+                  </a>
+                </div>
+                <!--  -->
+
+                <!--  -->
+                <div class="card">
+                <a href="#">
+                  <img src="media/pictures/frontview.jpeg" alt="pic">
+                  <h3>Collection of books</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
+                  </a>
+                </div>
+                <!--  -->
+
+                <!--  -->
+                <div class="card">
+                <a href="#">
+                  <img src="media/pictures/frontview.jpeg" alt="pic">
+                  <h3>Collection of books</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
+                  </a>
+                </div>
+                <!--  -->
+
+                <!--  -->
+                <div class="card">
+                <a href="#">
+                  <img src="media/pictures/frontview.jpeg" alt="pic">
+                  <h3>Collection of books</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
+                  </a>
+                </div>
+                <!--  -->
+
+              </section>
+
+
+              <a href="#" class="primary-btn" >VIEW MORE EVENTS</a>
+
+          </div>
+          <!-- end of events -->
+<!-- --------------------------------------------------------------------- -->
+        </section>
+
+      </section>
 
 
 

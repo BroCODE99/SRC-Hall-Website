@@ -23,7 +23,7 @@
     <header>
         <nav class="navbar">
             <div class="container">
-                <a href="../index.php" class="navbar-brand"><img src="../media/logos/srchh.png" alt="logo"></a>
+                <a href="../index.php" class="navbar-brand"><img src="../media/logos/srch1.png" alt="logo"></a>
                 <div class="navbar-nav">
                     <a  href="../index.php">home</a>
                     <a id="active-link" href="news_feed.php">news feed</a>

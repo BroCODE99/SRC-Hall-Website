@@ -1,66 +1,22 @@
 /* header */
 header {
-    min-height: 70vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../media/pictures/about-us.jpg") center/cover no-repeat fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
+  min-height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../media/pictures/about-us.jpg") center/cover no-repeat fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Media Queries */
-@media screen and (min-width: 540px){
-   
+@media screen and (max-width: 1200px) {
 }
 
-@media screen and (min-width: 768px){
-    
+@media screen and (max-width: 992px) {
 }
 
-@media screen and (min-width: 992px){
-    
+@media screen and (max-width: 768px) {
 }
 
-@media screen and (min-width: 1200px){
-    
+@media screen and (max-width: 540px) {
 }
-
-
-
-
-
