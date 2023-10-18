@@ -41,10 +41,8 @@
         </nav>
         <div class="banner">
             <div class="container">
-                <h1 class="banner-title">
-                    CONTACT US
-                </h1>
-                <p>exceeding expectations.</p>
+                <h1 class="banner-title">CONTACT</h1>
+                <p>...exceeding expectations.</p>
             </div>
         </div>
     </header>
