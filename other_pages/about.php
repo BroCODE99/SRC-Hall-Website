@@ -31,6 +31,13 @@
                     <a id = "active-link" href="about.php">about</a>
                     <!-- <a href="entertainment.html">entertainment</a> -->
                 </div>
+                <!-- ------------------------------- -->
+                <!-- sidebar -->
+                <?php 
+                include '../includes/sidebar.html';      
+                ?>
+                <!--  -->
+
             </div>
         </nav>
         <div class="banner">
@@ -68,6 +75,8 @@
 
         <!-- font awesome js -->
         <script src="../fontawesome/js/all.js"></script>
+        <script src="../js/index.js"></script>
+
     
 
 <?php 

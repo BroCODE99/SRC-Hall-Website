@@ -30,9 +30,10 @@
   margin: 30px 0;
 }
 
+/* -------------------------------- */
+
 /* core-values-wrapper */
 .core-values-wrapper {
-  /* width: 900px; */
   margin: 0 auto;
   background: #00000050;
   padding: 50px 0;
@@ -111,6 +112,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 30px;
   margin: 50px 0;
 }
@@ -150,22 +152,70 @@
 /* Media Queries */
 
 @media screen and (max-width: 1200px) {
+  .news-and-events-wrapper {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 992px) {
+  .news-and-events-wrapper {
+    width: 90%;
+  }
+  .being-an-innovator-wrapper h2 {
+    font-size: 3rem;
+    padding: 0 10px;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  .being-an-innovator-wrapper p {
+    width: 90%;
+    line-height: 2;
+    font-size: 15px;
+    padding: 0 10px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .navbar .container {
-    display: flex;
-    align-items: center;
+  .core-values-wrapper h2 {
+    font-size: 3rem;
+  }
+  .core-values {
+    gap: 0 50px;
+  }
+  .core-values .item {
+    font-size: 20px;
+  }
+  .core-values .item span {
+    font-size: 3rem;
+  }
+  .news-and-events-wrapper {
+    width: 90%;
+  }
+  .news-and-events-wrapper .header-text {
+    margin-bottom: 10px;
+  }
+  .news-wrapper section,
+  .events-wrapper section {
     justify-content: space-between;
+    margin: 20px 0;
+    gap: 20px;
+  }
+  .news-wrapper,
+  .events-wrapper {
+    padding: 20px 0;
+  }
+  .card {
+    width: 45%;
+    padding: 10px;
   }
 }
 
 @media screen and (max-width: 540px) {
-  .navbar-nav a {
-    padding-right: 1.2rem;
-    padding-left: 1.2rem;
+  .card {
+    width: 100%;
+  }
+  .core-values {
+    gap: 0 20px;
   }
 }

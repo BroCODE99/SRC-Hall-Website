@@ -28,22 +28,43 @@
       <nav class = "navbar">
         <div class = "container">
           <div> <a href = "index.php" class = "navbar-brand"><img src="media/logos/srch1.png" alt="logo"></a> </div>
-          <div class = "navbar-nav">
-            <a id="active-link" href = "index.php">home</a>
-            <a href = "other_pages/news_feed.php">news feed</a>
-            <a href = "other_pages/events.php">events</a>
-            <a href = "other_pages/gallery.php">gallery</a>
-            <a href = "other_pages/contact.php">contact</a>
-            <a href = "other_pages/about.php">about</a>
-            <!-- <a href = "entertainment.html">entertainment</a> -->
-          </div>
+            <div class = "navbar-nav">
+              <a id="active-link" href = "index.php">home</a>
+              <a href = "other_pages/news_feed.php">news feed</a>
+              <a href = "other_pages/events.php">events</a>
+              <a href = "other_pages/gallery.php">gallery</a>
+              <a href = "other_pages/contact.php">contact</a>
+              <a href = "other_pages/about.php">about</a>
+              <!-- <a href = "entertainment.html">entertainment</a> -->
+            </div>
+            <!-- ------------------------------- -->
+            <!-- sidebar -->
+            <div class="sidebar-btn">
+              <i class="fas fa-bars"></i>
+            </div>
+            <!-- --------- -->
+            <div class="sidebar-wrapper">
+            <div class="sidebar-close-btn">
+              <i class="fas fa-close"></i>
+            </div>
+              <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="other_pages/news_feed.php">News Feed</a></li>
+                <li><a href="other_pages/events.php">Events</a></li>
+                <li><a href="other_pages/gallery.php">Gallery</a></li>
+                <li><a href="other_pages/contact.php">Contact</a></li>
+                <li><a href="other_pages/about.php">About</a></li>
+              </ul>
+            </div>
+            <!--  -------------------->
         </div>
       </nav>
+      
       <div class = "banner">
         <div class = "container">
           <h4 class = "welcome-text" >WELCOME TO</h4>
           <h4 class = "banner-title">The home of  the Innovators</h4>
-          <p>we exceeding expectations...</p>
+          <p>we exceed expectations...</p>
           <div class="banner-btn">
             <a href="#" class="primary-btn">WATCH THE VIDEO <i class = "fas fa-play-circle" ></i> </a>
             <a href="#" class="secondary-btn">BROWSE GALLERY </i></a>
@@ -268,6 +289,7 @@
 
         <!-- font awesome js -->
         <script src="fontawesome/js/all.js"></script>
+        <script src="js/index.js"></script>
 
 
 <?php 
