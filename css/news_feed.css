@@ -1,11 +1,8 @@
 /* header */
 header {
   min-height: 70vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../media/pictures/2a.png") center/cover no-repeat fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
 }
 
 /* --------------------------------------------------------------------------- */

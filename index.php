@@ -103,7 +103,7 @@
           <div class="item">
             <p><span>S</span> - Service </p>
             <p><span>R</span> - Respect </p>
-            <p><span>S</span> - Co-operation </p>
+            <p><span>C</span> - Co-operation </p>
           </div>
 
           <div class="item">

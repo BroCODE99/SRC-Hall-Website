@@ -43,7 +43,11 @@ a {
 header {
   min-height: 80vh;
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("../media/pictures/3.png") center/cover no-repeat fixed;
+    url("../media/pictures/3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
@@ -229,7 +233,7 @@ header {
 
 /* ------ */
 footer {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgb(0, 0, 0);
   color: #daa520;
   text-align: center;
   padding: 2rem 0;
