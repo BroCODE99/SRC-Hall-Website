@@ -3,9 +3,593 @@ header {
   min-height: 70vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../media/pictures/about-us.jpg") center/cover no-repeat fixed;
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: auto;
+}
+
+/* ucc src hall info */
+.uccsrchall {
+  width: 100%;
+  height: auto;
+  padding: 20px 0px;
+  background-color: #000;
+  color: var(--primary-color);
+}
+
+.uccsrchall .wrapper {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
+  align-items: center;
+  text-align: center;
+}
+
+.uccsrcHeader {
+  font-size: 80px;
+  margin: 30px 0px;
+  text-transform: capitalize;
+}
+
+.littleBar {
+  width: 100px;
+  height: 10px;
+  margin-top: 20px;
+  background-color: var(--primary-color);
+}
+
+.littleInfo {
+  width: 70%;
+  font-size: 18px;
+  margin: 20px 0px;
+  line-height: 2rem;
+  color: #ccc;
+}
+
+.hidden {
+  width: 70%;
+  font-size: 18px;
+  color: #ccc;
+  text-align: justify;
+  line-height: 1.9rem;
+  display: none;
+}
+.hidden p {
+  margin: 20px 0px;
+}
+
+.toggleDisplayMissionBtnClass {
+  position: relative;
+  width: 30%;
+  height: 50px;
+  margin: 20px auto;
+  /* border: 2px solid red; */
+  overflow: hidden;
+}
+
+.missionStatement {
+  position: absolute;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #daa520;
+  color: #000;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.hideDisplayMission {
+  display: none;
+}
+
+.missionStatement:hover {
+  background-color: #f7b102;
+  color: #352f2f;
+}
+
+.readLess {
+  position: absolute;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #daa520;
+  color: #000;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
+  display: none;
+}
+/* toggle display mission and read less class */
+.displayHiddenClass {
+  display: block;
+}
+
+.readLess:hover {
+  background-color: #f7b102;
+  color: #352f2f;
+}
+
+/* quick fact about ucc src hall*/
+.quickFact {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  background-color: #ebe8e8;
+  border-top: 5px solid;
+  overflow: hidden;
+}
+
+.watermark {
+  position: absolute;
+  width: 100%;
+  height: 800px;
+}
+.watermarkImage {
+  top: 30px;
+  left: -50px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.quickFactContent {
+  width: 100%;
+  margin: 20px 0px;
+  margin-bottom: 10px;
+}
+.quickFactHeader {
+  width: 100%;
+  margin-top: 30px;
+  font-size: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.quickFactContent .header .bar {
+  width: 100px;
+  height: 2px;
+  background-color: rgb(221, 188, 2);
+}
+
+.quickTabs {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab {
+  width: 330px;
+  height: 300px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  /* border: 1px solid ; */
+}
+.icon {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  border: 5px solid #daa520;
+  border-radius: 100%;
+  opacity: 0;
+  overflow: hidden;
+}
+.icon .fontawesomeIcon {
+  width: 90%;
+  height: 90%;
+  color: #daa520;
+  border-radius: 100%;
+  transition: 0.3s ease;
+}
+
+.number {
+  margin: 10px 0px;
+  font-size: 30px;
+  color: rgb(7, 7, 7);
+  opacity: 0;
+}
+
+.quickFactTxt {
+  color: #000;
+  opacity: 0;
+}
+
+.showImageAndYearsOfOperation {
+  width: 100%;
+  margin-bottom: 20px;
+  background: none;
+  box-shadow: 2px 3px 5px 1px #ccc;
+  opacity: 0;
+}
+
+.yearOfOperation {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--primary-color);
+}
+.yearOfOperation .text {
+  font-size: 22px;
+  font-weight: 800;
+}
+.years {
+  font-size: 50px;
+  font-weight: 900;
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.dash {
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+}
+
+/* cross and our calling (positive message) */
+.positiveMessage {
+  width: 100%;
+  height: 250px;
+  opacity: 0;
+}
+
+.positiveMessage .wrapper {
+  height: 100%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.positiveMessage .bar,
+.pBar {
+  width: 100px;
+  height: 10px;
+  background-color: gold;
+}
+
+.question {
+  font-size: 35px;
+  cursor: pointer;
+  color: gold;
+}
+.positiveMessageBtn {
+  width: 260px;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 13px;
+  border: 1px solid gold;
+  background-color: #030303;
+  color: gold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.positiveMessageBtn:hover {
+  background-color: var(--primary-color);
+  color: #000;
+}
+
+.message {
+  position: relative;
+  width: 800px;
+  padding: 0px 20px;
+  padding-top: 50px;
+  margin: auto;
+  /* margin-top: -400px; */
+  line-height: 1.9rem;
+  position: absolute;
+  left: 20%;
+  /* top: 100px; */
+  background-color: #e0dede;
+  color: #000;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  z-index: 1100;
+  /* border-radius: 20px; */
+  text-align: justify;
+  display: none;
+}
+
+.closeCalling {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.displaymessage {
+  display: block;
+  animation: fadeIn 0.3s ease-in;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.message p {
+  margin: 30px 0px;
+}
+.message .list {
+  margin-left: 30px;
+}
+.list li {
+  list-style-type: circle;
+}
+.message .pMessage {
+  margin-left: 30px;
+}
+
+/* brief history section */
+.briefHistory {
+  width: 100vw;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #302f2f;
+  color: #fff;
+}
+.bgImageContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.bgImage {
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+
+.briefHistory .wrapper {
+  max-width: 1024;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.historyheader {
+  font-size: 50px;
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--primary-color);
+  opacity: 0;
+}
+.hallFormation {
+  width: 60%;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #ccc;
+  font-size: 18px;
+  opacity: 0;
+}
+
+.imagesContainer {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.imagesContainer li {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+.imagesContainer li figure {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imagesContainer li figure img {
+  width: 150px;
+  height: 150px;
+  border-radius: 20%;
+  box-shadow: 2px 10px 10px #000;
+  /* object-fit: cover; */
+}
+figcaption {
+  color: var(--primary-color);
+  font-weight: 800;
+}
+
+.showMoreHistory {
+  padding: 15px 25px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  color: #000;
+  transition: 0.3s ease;
+  z-index: 1000;
+  opacity: 0;
+}
+.showMoreHistory:hover {
+  background-color: rgb(219, 206, 133);
+}
+
+/* full history section */
+.hallHistory {
+  /* margin-top: -600px; */
+  position: relative;
+  padding: 0px;
+  line-height: 1.9rem;
+  width: 100%;
+  background-color: #000;
+  color: #ccc;
+  /* background: transparent; */
+  display: none;
+}
+.displayHistory {
+  display: block;
+}
+.closeHistory {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  border: 1px solid var(--primary-color);
+  border-radius: 100%;
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.hallHistory .wrapper {
+  padding: 50px 30px;
+}
+.hallHistory p {
+  margin: 30px 0px;
+}
+.hallHistory .listYears {
+  margin-left: 30px;
+}
+.hallHistory .list {
+  margin: 10px 0px;
+  list-style-type: circle;
+}
+
+/* page nav section */
+.pagesContainer {
+  width: 100%;
+  padding: 50px 0px;
+  background-color: whitesmoke;
+}
+.pBar {
+  background-color: var(--primary-color);
+  margin: 40px 0px;
+  margin-bottom: 20px;
+}
+.pageSectionHeader {
+  font-size: 35px;
+  text-transform: capitalize;
+  font-weight: 1000;
+  color: #000;
+}
+
+.pageCards {
+  width: 100%;
+  margin: 30px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 200px;
+  height: 100px;
+  background-color: #e7e5e5;
+  border: 5px solid var(--primary-color);
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 800;
+  transition: 0.3s ease;
+}
+.card:hover {
+  color: #fff;
+}
+
+/* alumni */
+
+.alumnis {
+  width: 100%;
+  margin: 30px 0px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.alumni {
+  width: 330px;
+  height: 170px;
+  border: none;
+  text-align: center;
+  border: 10px solid #ccc;
+  background: rgba(0, 0, 0);
+  overflow: hidden;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.alumni div {
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+}
+
+.alumni img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: contain; */
+  transition: all 2s ease;
+}
+.alumni img:hover {
+  scale: 1.2;
+}
+
+/* hide elements */
+.hideElement {
+  display: none;
+}
+
+/* fade elements in on scroll */
+.fadeIn {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
 }
 
 /* Media Queries */
@@ -13,10 +597,173 @@ header {
 }
 
 @media screen and (max-width: 992px) {
+  .wrapper {
+    width: 100vw;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .uccsrcHeader {
+    font-size: 30px;
+    margin: 15px 0px;
+    text-transform: uppercase;
+  }
+  .littleBar {
+    height: 5px;
+    margin-top: 10px;
+  }
+
+  .littleInfo {
+    width: 100%;
+    font-size: 16px;
+    margin: 15px 0px;
+    text-align: left;
+  }
+
+  .hidden {
+    width: 100%;
+    font-size: 16px;
+    margin: 15px 0px;
+    text-align: left;
+  }
+  .hidden p {
+    margin: 15px 0px;
+  }
+  .toggleDisplayMissionBtnClass {
+    width: 26%;
+    margin: 20px auto;
+    /* border: 2px solid red; */
+  }
+
+  .missionStatement {
+    padding: 8px;
+    font-size: 18px;
+  }
+
+  .readLess {
+    padding: 8px;
+    font-size: 18px;
+  }
+
+  /* quick fact about ucc src hall*/
+  .quickFact {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .watermark {
+    height: 100%;
+  }
+  .watermarkImage {
+    left: 0px;
+    object-fit: fill;
+  }
+
+  /* content */
+  .tab {
+    width: 250px;
+  }
+
+  .message {
+    width: 99%;
+    margin: auto;
+    left: 5px;
+    box-shadow: none;
+  }
+  .briefHistory {
+    padding-bottom: 0px;
+  }
+  .historyheader {
+    width: 100%;
+    font-size: 25px;
+    margin-top: 10px;
+  }
+  .hallFormation {
+    width: 100%;
+    margin: 20px auto;
+    text-align: left;
+    font-weight: 500;
+  }
+  .imagesContainer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  .imagesContainer li {
+    width: 45%;
+    height: 200px;
+  }
+
+  /*  */
+  /* pages bar */
+  .pBar {
+    height: 4px;
+  }
+  .pageCards {
+    gap: 8px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .card {
+    width: 150px;
+    height: 80px;
+    color: var(--primary-color);
+  }
+
+  .alumni {
+    width: 270px;
+    height: 160px;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    border: 5px solid #ccc;
+  }
 }
 
 @media screen and (max-width: 768px) {
-}
+  .toggleDisplayMissionBtnClass {
+    width: 150px;
+    margin: 20px auto;
+    /* border: 2px solid red; */
+  }
 
-@media screen and (max-width: 540px) {
+  .missionStatement {
+    width: 150px;
+    padding: 8px;
+    font-size: 18px;
+  }
+
+  /* fact */
+  .quickFactHeader {
+    width: 100%;
+  }
+  .quickFactContent .header .bar {
+    width: 50px;
+  }
+
+  .readLess {
+    width: 150px;
+    padding: 8px;
+    font-size: 18px;
+  }
+  /* quick facts */
+  .tab {
+    width: 90%;
+    box-shadow: 0px 2px 3px 3px #ccc;
+  }
+  /* pages cards */
+  .pageCards {
+    gap: 8px;
+    justify-content: flex-start;
+  }
+
+  /* alumni */
+  .alumnis {
+    justify-content: center;
+    align-items: center;
+  }
+  .alumni {
+    width: 80%;
+  }
 }

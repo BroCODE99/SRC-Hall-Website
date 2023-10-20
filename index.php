@@ -108,7 +108,7 @@
 
           <div class="item">
             <p><span>H</span> - Honesty </p>
-            <p><span>A</span> - Accessibilty </p>
+            <p><span>A</span> - Accessibility </p>
             <p><span>L</span> - Leadership </p>
             <p><span>L</span> - Loyalty </p>
           </div>
@@ -266,7 +266,7 @@
 
           </div>
           <!-- end of events -->
-<!-- --------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------- -->
         </section>
 
       </section>

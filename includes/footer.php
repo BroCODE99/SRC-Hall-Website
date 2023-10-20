@@ -6,15 +6,15 @@
         <div class="about-wrapper">
           <h4>ABOUT THE SRC HALL</h4>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quo asperiores numquam libero, reiciendis nobis tempora magnam nesciunt suscipit, ut laboriosam laudantium quia veritatis quae impedit eius quibusdam quidem voluptates provident praesentium aut </p>
-          <a href="#" class="read-more-btn">READ MORE</a>
+          <a href="#" class="read-more-btn">READ MORE&gt;&gt;</a>
         </div>
         <!--  -->
 
         <!--  -->
         <div class="history-wrapper">
-          <h4>A BRIEF HISTORY</h4>
+          <h4>SRC HALL FUN FACT</h4>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quo asperiores numquam libero, reiciendis nobis tempora magnam nesciunt suscipit, ut laboriosam laudantium quia veritatis quae impedit eius quibusdam quidem voluptates provident praesentium aut </p>
-          <a href="#" class="read-more-btn">READ MORE</a>
+          <a href="#" class="read-more-btn">READ MORE&gt;&gt;</a>
         </div>
         <!--  -->
 
@@ -45,13 +45,19 @@
         <a href = "#"><i class = "fab fa-instagram"></i></a>
         <a href = "#"><i class = "fab fa-pinterest"></i></a>
       </div>
-      <span>UccSrcHall &copy; 2023</span>
+      <span class="copyright-info">UccSrcHall &copy; <span id="copyright-date"></span></span>
+      <span class="dev-info">Developed by: BROCODE</span>
     </footer>
     <!-- end of footer -->
 
 
 
-    
+    <script>
+      const dateTime = new Date();
+      const copyrightDate = document.querySelector("#copyright-date");
+      const yearNumber = dateTime.getFullYear();
+      copyrightDate.textContent = yearNumber;
+    </script>    
     
   </body>
 </html>

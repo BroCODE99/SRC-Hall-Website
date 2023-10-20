@@ -51,19 +51,183 @@
     <!-- end of header -->
 
 
-
-
-
-
     <!-- -------------------------------------------------------------- -->
+    <section class="news-and-events-container">
+        <section class="news-and-events-wrapper">
+          <hr>
+          <!-- <h2 class="header-text"> Hall News </h2> -->
+          <!-- news -->
+          <div class="news-wrapper">
+                <h4> <i class="fas fa-square" ></i> LATEST NEWS </h4>
+                <section>
+                    <!--  -->
+                    <div class="card">
+                        <a href="#">
+                            <img src="../media/pictures/4.png" alt="pic">
+                            <h3>Collection of books at the hall and on campus</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
+                        </a>
+                    </div>
+                    <!--  -->
+
+                    <!--  -->
+                    <div class="card">
+                        <a href="#">
+                            <img src="../media/pictures/frontview.jpeg" alt="pic">
+                            <h3>Collection of books</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
+                        </a>
+                    </div>
+                    <!--  -->
+
+                    <!--  -->
+                    <div class="card">
+                        <a href="#">
+                            <img src="../media/pictures/about-us.jpg" alt="pic">
+                            <h3>Collection of books</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
+                        </a>
+                    </div>
+                    <!--  -->
+
+                    <!--  -->
+                    <div class="card">
+                        <a href="#">
+                        <img src="../media/pictures/about-us.jpg" alt="pic">
+                        <h3>Collection of books</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
+                        </a>
+                    </div>
+                    <!--  -->
+
+                    <!--  -->
+                    <div class="card">
+                        <a href="#">
+                        <img src="../media/pictures/2a.png" alt="pic">
+                        <h3>Collection of books</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
+                        </a>
+                    </div>
+                    <!--  -->
+
+                    <!--  -->
+                    <div class="card">
+                        <a href="#">
+                        <img src="../media/pictures/about-us.jpg" alt="pic">
+                        <h3>Collection of books</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
+                        </a>
+                    </div>
+                    <!--  -->
+
+                </section>
+            </div>   
+        </section>
+    </section>    
+
+          <!-- end latest of news -->
+          <!-- -------------------------------------------------------------------- -->
+    <section class="older-news-container">
+        <section class="news-and-events-wrapper">
+          <!-- events -->
+          <div class="events-wrapper">
+            <h4> <i class="fas fa-square" ></i> OLDER NEWS</h4>
+            <section>
+                <!--  -->
+                <div class="card">
+                <a href="#">
+                  <img src="../media/pictures/3.png" alt="pic">
+                  <h3>Collection of books</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
+                  </a>
+                </div>
+                <!--  -->
+
+                <!--  -->
+                <div class="card">
+                  <a href="#">
+                  <img src="../media/pictures/frontview.jpeg" alt="pic">
+                  <h3>Collection of books</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
+                  </a>
+                </div>
+                <!--  -->
+
+                <!--  -->
+                <div class="card">
+                <a href="#">
+                  <img src="../media/pictures/4.png" alt="pic">
+                  <h3>Collection of books</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
+                  </a>
+                </div>
+                <!--  -->
+
+                <!--  -->
+                <div class="card">
+                <a href="#">
+                  <img src="../media/pictures/frontview.jpeg" alt="pic">
+                  <h3>Collection of books</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
+                  </a>
+                </div>
+                <!--  -->
+
+                <!--  -->
+                <div class="card">
+                <a href="#">
+                  <img src="../media/pictures/frontview.jpeg" alt="pic">
+                  <h3>Collection of books</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
+                  </a>
+                </div>
+                <!--  -->
+
+                <!--  -->
+                <div class="card">
+                <a href="#">
+                  <img src="../media/pictures/2a.png" alt="pic">
+                  <h3>Collection of books</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
+                  </a>
+                </div>
+                <!--  -->
+
+              </section>
+
+          </div>
+        </section>
+    </section>    
+          <!-- end of events -->
+            <!-- --------------------------------------------------------------------- -->
+ 
 
 
 
 
 
-        <!-- font awesome js -->
-        <script src="../fontawesome/js/all.js"></script>
-        <script src="../js/index.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- font awesome js -->
+<script src="../fontawesome/js/all.js"></script>
+<script src="../js/index.js"></script>
 
     
 

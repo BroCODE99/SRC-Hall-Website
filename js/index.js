@@ -1,3 +1,4 @@
+// --------------------------------
 const sideBarOpenBtn = document.querySelector(".sidebar-btn");
 const sideBarWrapper = document.querySelector(".sidebar-wrapper");
 const sidebarCloseBtn = document.querySelector(".sidebar-close-btn");

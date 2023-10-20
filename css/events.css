@@ -7,28 +7,124 @@ header {
 
 /* -------------------------------------------------------------------- */
 
-/* Media Queries */
-
-@media screen and (max-width: 1200px) {
+/* -------------------------------------- */
+/* News and events */
+.news-and-events-container {
+  background: #000000;
+}
+.older-events-container {
+  background: #000000;
+}
+.news-and-events-wrapper {
+  width: 60%;
+  margin: 0 auto;
+  padding: 50px 0;
 }
 
+.news-and-events-wrapper hr {
+  width: 150px;
+  color: #daa520;
+  height: 10px;
+  background: #daa520;
+  border: none;
+}
+.news-and-events-wrapper .header-text {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+.news-wrapper,
+.events-wrapper {
+  padding: 50px 0;
+}
+
+.news-wrapper h4,
+.events-wrapper h4 {
+  font-size: 20px;
+  color: #929292;
+  letter-spacing: 1.5px;
+}
+.news-wrapper section,
+.events-wrapper section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 50px 0;
+}
+.card {
+  width: 30%;
+  /* padding: 10px; */
+  box-shadow: 0 0 15px 3px #ffffff30;
+  /* height: 400px; */
+  transition: all 0.3s ease-in-out;
+  line-height: 1.3;
+  overflow: hidden;
+  background: #000000;
+}
+.card a {
+  text-decoration: none;
+  color: #000000;
+}
+.card h3 {
+  margin: 10px 0;
+  padding: 10px;
+  color: #daa520;
+}
+
+.card p {
+  color: #ffffff;
+  padding: 10px;
+}
+.card:hover {
+  box-shadow: 0 0 20px 10px #daa52065;
+  transform: translateY(2px);
+}
+
+/*----------------------------------------------  */
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  .news-and-events-wrapper {
+    width: 80%;
+  }
+}
 @media screen and (max-width: 992px) {
+  .news-and-events-wrapper {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .navbar .container {
+  /* .navbar .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  } */
+  .news-and-events-wrapper {
+    width: 90%;
+  }
+  .news-and-events-wrapper .header-text {
+    margin-bottom: 10px;
+  }
+  .news-wrapper section,
+  .events-wrapper section {
+    justify-content: space-between;
+    margin: 20px 0;
+    gap: 20px;
+  }
+  .news-wrapper,
+  .events-wrapper {
+    padding: 20px 0;
+  }
+  .card {
+    width: 45%;
+    padding: 10px;
   }
 }
 
 @media screen and (max-width: 540px) {
-  .navbar-nav a {
-    padding-right: 1.2rem;
-    padding-left: 1.2rem;
-  }
-  .banner-title {
-    font-size: 6rem;
+  .card {
+    width: 100%;
   }
 }
