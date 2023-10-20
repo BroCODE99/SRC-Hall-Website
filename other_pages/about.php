@@ -8,11 +8,9 @@
     <title>NewsFlash | About Us </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font awesome icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous" />
-    <link rel="stylesheet" href="../css/index.css?v=<?= time();?>">
-    <link rel="stylesheet" href="../css/about.css?v=<?= time();?>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/index.css?v=<?= time(); ?>">
+    <link rel="stylesheet" href="../css/about.css?v=<?= time(); ?>">
 </head>
 
 <body>
@@ -28,13 +26,13 @@
                     <a href="events.php">events</a>
                     <a href="gallery.php">gallery</a>
                     <a href="contact.php">contact</a>
-                    <a id = "active-link" href="about.php">about</a>
+                    <a id="active-link" href="about.php">about</a>
                     <!-- <a href="entertainment.html">entertainment</a> -->
                 </div>
                 <!-- ------------------------------- -->
                 <!-- sidebar -->
-                <?php 
-                include '../includes/sidebar.html';      
+                <?php
+                include '../includes/sidebar.html';
                 ?>
                 <!--  -->
 
@@ -43,7 +41,7 @@
         <div class="banner">
             <div class="container">
                 <h1 class="banner-title">
-                    ABOUT  US 
+                    ABOUT US
                 </h1>
                 <p>...exceeding expectations.</p>
             </div>
@@ -52,7 +50,7 @@
     <!-- end of header -->
 
 
-<!-- ------------------------------------------------ -->
+    <!-- ------------------------------------------------ -->
 
 
     <!-- ------------------------------------------------ -->
@@ -229,163 +227,380 @@
     </section>
 
 
-    <!-- brief history -->
-    <section class="briefHistory">
-        <div class="bgImageContainer">
-            <img src="../media/pictures/3.png" alt="" class="bgImage">
-        </div>
+
+
+    <!-- src hall management -->
+    <section class="srcHallManagement">
         <div class="wrapper">
-            <!--  -->
-            <h1 class="historyheader">A Brief history Of UCC SRC Hall</h1>
-            <p class="hallFormation">It was established in 1971, the same year that UCC attained the status of a full and independent university. The hall is located in the heart of the campus, close to the SRC offices and other important facilities.</p>
-            <ul class="imagesContainer">
-                <li>
-                    <figure>
-                        <img src="../media/pictures/2a.png" alt="">
-                        <figcaption>1999</figcaption>
-                    </figure>
-                </li>
 
-                <li>
-                    <figure>
-                        <img src="../media/pictures/2022-10-09.jpg" alt="">
-                        <figcaption>1999</figcaption>
-                    </figure>
-                </li>
-
-                <li>
-                    <figure>
-                        <img src="../media/pictures/3.png" alt="">
-                        <figcaption>1999</figcaption>
-                    </figure>
-                </li>
-
-                <li>
-                    <figure>
-                        <img src="../media/pictures/frontview.jpeg" alt="">
-                        <figcaption>1999</figcaption>
-                    </figure>
-                </li>
-
-                <li>
-                    <figure>
-                        <img src="../media/pictures/4.png" alt="">
-                        <figcaption>1999</figcaption>
-                    </figure>
-                </li>
-            </ul>
-            <div class="showMoreHistory">Read the full history</div>
-        </div>
-    </section>
-
-
-    <!-- history section -->
-    <section class="hallHistory">
-        <div class="closeHistory">
-            <i class="fa fa-close"></i>
-        </div>
-        <div class="wrapper">
-            <div>
-                <p>
-                    The Student Representative Council (SRC) Hall of the University of Cape Coast (UCC) is a non-residential hall for students who are actively involved in the SRC. It was established in 1971, the same year that UCC attained the status of a full and independent university. The hall is located in the heart of the campus, close to the SRC offices and other important facilities.
-                </p>
-                <p>
-                    The SRC Hall is home to about 100 students, who are selected based on their academic excellence, leadership potential, and commitment to student service. The hall is known for its vibrant and diverse community, which includes students from all over Ghana and other African countries.
-                </p>
-                <p>
-                    The SRC Hall has played a significant role in the history of UCC. It has been a breeding ground for future leaders in Ghana and Africa. Many notable alumni of the hall have gone on to hold high-level positions in government, business, and academia.
-                </p>
-                <p>
-                    Here is a brief history of the SRC Hall, from its inception to the present day:
-                </p>
-                <ul class="listYears">
-                    <li class="list">
-                        1971: The SRC Hall is established as a non-residential hall for students who are actively involved in the SRC.
-                    </li>
-
-                    <li class="list">
-                        1973: The hall is inaugurated by the then Chancellor of UCC, Mr. Justice E.C.J. Korsah.
-                    </li>
-
-                    <li class="list">
-                        1975: The SRC Hall hosts its first annual SRC Ball.
-                    </li>
-
-                    <li class="list">
-                        1977: The hall wins the UCC Inter-Hall Sports Competition for the first time.
-                    </li>
-
-                    <li class="list">
-                        1980: The SRC Hall establishes a scholarship scheme for students from disadvantaged backgrounds.
-                    </li>
-
-                    <li class="list">
-                        1985: The hall celebrates its 10th anniversary with a series of events, including a public lecture by former President Jerry John Rawlings.
-
-                    </li>
-
-                    <li class="list">
-                        1990: The SRC Hall introduces a mentorship program for new students.
-                    </li>
-
-                    <li class="list">
-                        1995: The hall celebrates its 25th anniversary with a grand ceremony.
-                    </li>
-
-                    <li class="list">
-                        2000: The SRC Hall establishes a community service program, which organizes regular outreach activities to benefit the surrounding community.
-                    </li>
-
-                    <li class="list">
-                        2005: The hall launches a website to provide information and updates to students and alumni.
-                    </li>
-
-                    <li class="list">
-                        2010: The SRC Hall celebrates its 40th anniversary with a series of events, including a homecoming ceremony for alumni.
-                    </li>
-
-                    <li class="list">
-                        2015: The hall undergoes a major renovation, which includes the refurbishment of its common rooms and bedrooms.
-                    </li>
-
-                    <li class="list">
-                        2020: The SRC Hall celebrates its 50th anniversary with a series of virtual events, due to the COVID-19 pandemic.
-                    </li>
-
-                    <li class="list">
-                        2023: The SRC Hall remains a vibrant and active community, home to students who are passionate about making a difference in the world.
-                    </li>
-                </ul>
-                <p>
-                    The SRC Hall is an important part of the UCC community. It has a long and rich history, and it continues to play a vital role in the development of students and leaders.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!--  cross and our calling (positive message) -->
-    <section class="pagesContainer">
-        <div class="wrapper">
             <div class="pBar"></div>
-            <h3 class="pageSectionHeader">Related Pages</h3>
+            <h1 class="header hallManagementHeader">
+                SRC Hall Management
+            </h1>
+            <div class="srcHallManagementCardsConatainer">
+                <div class="leader">
+                    <a href="#">
+                        <div class="hMcard">
+                            <div class="cardImageContainer">
+                                <img src="../media/pictures/people/hallmanagement/36481-034a3751.jpg" alt="SRC Hall Master" class="cardImage">
+                            </div>
+                            <div class="cardTxt">
+                                <h2 class="name">Prof. Charles Adabo Oppong</h2>
+                                <p class="title">Hall master / Warden</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <h2 class="otherCategory">Staff</h2>
+                <div class="staff">
+                    <div class="hMcard">
+                        <a href="#">
+                            <div class="cardImageContainer">
+                                <img src="../media/pictures/people/hallmanagement/charityabraham" alt="Asistant Registrar" class="cardImage">
+                            </div>
+                            <div class="cardTxt">
+                                <h2 class="name">Mrs. Charity Abraham</h2>
+                                <p class="title">Asistant Registrar</p>
+                            </div>
+                        </a>
+                    </div>
 
-            <!-- page cards -->
-            <div class="pageCards">
-                <a href="#" class="card">Home</a>
-                <a href="#" class="card">News Feed</a>
-                <a href="#" class="card">Events</a>
-                <a href="#" class="card">Gallary</a>
-                <a href="#" class="card">Contact</a>
+
+                    <div class="hMcard">
+                        <a href="#">
+                            <div class="cardImageContainer">
+                                <h1 class="acronym">UE</h1>
+                            </div>
+                            <div class="cardTxt">
+                                <h2 class="name">Mr. Urel Ewusi</h2>
+                                <p class="title">Principal Hall Assistant</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hMcard">
+                        <a href="#">
+                            <div class="cardImageContainer">
+                                <img src="../media/pictures/people/hallmanagement/thelma" alt="Principal Technician" class="cardImage">
+                            </div>
+                            <div class="cardTxt">
+                                <h2 class="name">Miss. Thelma Nana Dasoberi</h2>
+                                <p class="title">Principal Technician</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hMcard">
+                        <a href="#">
+                            <div class="cardImageContainer">
+                                <h1 class="acronym">AKB</h1>
+                            </div>
+                            <div class="cardTxt">
+                                <h2 class="name">Mr. Albert K Baidoo</h2>
+                                <p class="title">Senior Administrative Assistant</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hMcard">
+                        <a href="#">
+                            <div class="cardImageContainer">
+                                <h1 class="acronym">NAK</h1>
+                            </div>
+                            <div class="cardTxt">
+                                <h2 class="name">Mrs. Nana Ama Anhwere-Kuffour</h2>
+                                <p class="title">Senior Hall Asistant</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="hMcard">
+                        <a href="#">
+                            <div class="cardImageContainer">
+                                <h1 class="acronym">HO</h1>
+                            </div>
+                            <div class="cardTxt">
+                                <h2 class="name">Mr. Henry Ofori</h2>
+                                <p class="title">Accounting Assistant</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hMcard">
+                        <a href="#">
+                            <div class="cardImageContainer">
+                                <h1 class="acronym">EY</h1>
+                            </div>
+                            <div class="cardTxt">
+                                <h2 class="name">Miss. Ellen Yeboah</h2>
+                                <p class="title">Administrative Assistant</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hMcard">
+                        <a href="#">
+                            <div class="cardImageContainer">
+                                <h1 class="acronym">KVD</h1>
+                            </div>
+                            <div class="cardTxt">
+                                <h2 class="name">Mr. Kennedy V. K. Dogbatsey</h2>
+                                <p class="title">Hall Asistant</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hMcard">
+                        <a href="#">
+                            <div class="cardImageContainer">
+                                <h1 class="acronym">JE</h1>
+                            </div>
+                            <div class="cardTxt">
+                                <h2 class="name">Mr. Jonathan Esuong</h2>
+                                <p class="title">Hall Asistant</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hMcard">
+                        <a href="#">
+                            <div class="cardImageContainer">
+                                <h1 class="acronym">VA</h1>
+                            </div>
+                            <div class="cardTxt">
+                                <h2 class="name">Mr. Vincent Ansah</h2>
+                                <p class="title">Hall Asistant</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hMcard">
+                        <a href="#">
+                            <div class="cardImageContainer">
+                                <h1 class="acronym">CB</h1>
+                            </div>
+                            <div class="cardTxt">
+                                <h2 class="name">Miss. Comfort Baidoo</h2>
+                                <p class="title">Hall Asistant</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hMcard">
+                        <a href="#">
+                            <div class="cardImageContainer">
+                                <h1 class="acronym">ET</h1>
+                            </div>
+                            <div class="cardTxt">
+                                <h2 class="name">Miss. Elizabeth Taylor</h2>
+                                <p class="title">Hall Asistant</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+
+
+
+    <!-- src hall management -->
+    <section class="srcHallJCRCManagement">
+        <div class="wrapper">
+
+            <div class="pBar"></div>
+            <h1 class="header JCRCManagementHeader">
+                SRC Hall JCRC leadership
+            </h1>
+            <div class="srcHallManagementCardsConatainer">
+                <div class="leaders">
+                    <div class="hMcard">
+                        <a href="#">
+                            <div class="cardImageContainer">
+                                <img src="../media/pictures/people/hallmanagement/36481-034a3751.jpg" alt="SRC Hall Master" class="cardImage">
+                            </div>
+                            <div class="cardTxt">
+                                <h2 class="name">Prof. Charles Adabo Oppong</h2>
+                                <p class="title">Hall master / Warden</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="hMcard">
+                        <a href="#">
+                            <div class="cardImageContainer">
+                                <img src="../media/pictures/people/hallmanagement/36481-034a3751.jpg" alt="SRC Hall Master" class="cardImage">
+                            </div>
+                            <div class="cardTxt">
+                                <h2 class="name">Prof. Charles Adabo Oppong</h2>
+                                <p class="title">Hall master / Warden</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <h2 class="otherCategory">Other Leaders</h2>
+                <div class="staff">
+                    <div class="hMcard">
+                        <a href="#">
+                            <div class="cardImageContainer">
+                                <img src="../media/pictures/people/hallmanagement/charityabraham" alt="Asistant Registrar" class="cardImage">
+                            </div>
+                            <div class="cardTxt">
+                                <h2 class="name">Mrs. Charity Abraham</h2>
+                                <p class="title">Asistant Registrar</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="hMcard">
+                        <a href="#">
+                            <div class="cardImageContainer">
+                                <h1 class="acronym">UE</h1>
+                            </div>
+                            <div class="cardTxt">
+                                <h2 class="name">Mr. Urel Ewusi</h2>
+                                <p class="title">Principal Hall Assistant</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hMcard">
+                        <a href="#">
+                            <div class="cardImageContainer">
+                                <img src="../media/pictures/people/hallmanagement/thelma" alt="Principal Technician" class="cardImage">
+                            </div>
+                            <div class="cardTxt">
+                                <h2 class="name">Miss. Thelma Nana Dasoberi</h2>
+                                <p class="title">Principal Technician</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hMcard">
+                        <a href="#">
+                            <div class="cardImageContainer">
+                                <h1 class="acronym">AKB</h1>
+                            </div>
+                            <div class="cardTxt">
+                                <h2 class="name">Mr. Albert K Baidoo</h2>
+                                <p class="title">Senior Administrative Assistant</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hMcard">
+                        <a href="#">
+                            <div class="cardImageContainer">
+                                <h1 class="acronym">NAK</h1>
+                            </div>
+                            <div class="cardTxt">
+                                <h2 class="name">Mrs. Nana Ama Anhwere-Kuffour</h2>
+                                <p class="title">Senior Hall Asistant</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="hMcard">
+                        <a href="#">
+                            <div class="cardImageContainer">
+                                <h1 class="acronym">HO</h1>
+                            </div>
+                            <div class="cardTxt">
+                                <h2 class="name">Mr. Henry Ofori</h2>
+                                <p class="title">Accounting Assistant</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hMcard">
+                        <a href="#">
+                            <div class="cardImageContainer">
+                                <h1 class="acronym">EY</h1>
+                            </div>
+                            <div class="cardTxt">
+                                <h2 class="name">Miss. Ellen Yeboah</h2>
+                                <p class="title">Administrative Assistant</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hMcard">
+                        <a href="#">
+                            <div class="cardImageContainer">
+                                <h1 class="acronym">KVD</h1>
+                            </div>
+                            <div class="cardTxt">
+                                <h2 class="name">Mr. Kennedy V. K. Dogbatsey</h2>
+                                <p class="title">Hall Asistant</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hMcard">
+                        <a href="#">
+                            <div class="cardImageContainer">
+                                <h1 class="acronym">JE</h1>
+                            </div>
+                            <div class="cardTxt">
+                                <h2 class="name">Mr. Jonathan Esuong</h2>
+                                <p class="title">Hall Asistant</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hMcard">
+                        <a href="#">
+                            <div class="cardImageContainer">
+                                <h1 class="acronym">VA</h1>
+                            </div>
+                            <div class="cardTxt">
+                                <h2 class="name">Mr. Vincent Ansah</h2>
+                                <p class="title">Hall Asistant</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hMcard">
+                        <a href="#">
+                            <div class="cardImageContainer">
+                                <h1 class="acronym">CB</h1>
+                            </div>
+                            <div class="cardTxt">
+                                <h2 class="name">Miss. Comfort Baidoo</h2>
+                                <p class="title">Hall Asistant</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hMcard">
+                        <a href="#">
+                            <div class="cardImageContainer">
+                                <h1 class="acronym">ET</h1>
+                            </div>
+                            <div class="cardTxt">
+                                <h2 class="name">Miss. Elizabeth Taylor</h2>
+                                <p class="title">Hall Asistant</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
 
 
     <!-- hall alumni -->
-    <section class="pagesContainer">
+    <section class="alumniContainer pagesContainer">
         <div class="wrapper">
             <div class="pBar"></div>
-            <h3 class="pageSectionHeader">notable alumni over the years</h3>
+            <h3 class="pageSectionHeader alumniHeader">notable alumni over the years</h3>
 
             <!-- page cards -->
             <ul class="alumnis">
@@ -447,6 +662,25 @@
     </section>
 
 
+    <!-- related pages -->
+
+    <section class="pagesContainer">
+        <div class="wrapper">
+            <div class="pBar"></div>
+            <h3 class="pageSectionHeader">Related Pages</h3>
+
+            <!-- page cards -->
+            <div class="pageCards">
+                <a href="#" class="card">Home</a>
+                <a href="#" class="card">News Feed</a>
+                <a href="#" class="card">Events</a>
+                <a href="#" class="card">Gallary</a>
+                <a href="#" class="card">Contact</a>
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- font awesome js -->
     <script src="../fontawesome/js/all.js"></script>
@@ -479,12 +713,12 @@
 
 
 
-        <!-- font awesome js -->
-        <script src="../fontawesome/js/all.js"></script>
-        <script src="../js/index.js"></script>
+    <!-- font awesome js -->
+    <script src="../fontawesome/js/all.js"></script>
+    <script src="../js/index.js"></script>
 
-    
 
-<?php 
+
+    <?php
     include_once '../includes/footer.php';
-?>
+    ?>

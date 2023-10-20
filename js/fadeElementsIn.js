@@ -9,10 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     ".showImageAndYearsOfOperation"
   );
   const positiveMessage = document.querySelector(".positiveMessage");
-  const historyheader = document.querySelector('.historyheader');
-  const hallFormation = document.querySelector('.hallFormation');
-  const imagesContainer = document.querySelector('.imagesContainer');
-  const showMoreHistory = document.querySelector('.showMoreHistory');
 
   function isElementInViewport(element) {
     const rect = element.getBoundingClientRect();
@@ -24,18 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function handleScroll() {
-    if(isElementInViewport(showMoreHistory)){
-      addFadeInClass(showMoreHistory);
-    }
-    if(isElementInViewport(imagesContainer)){
-      addFadeInClass(imagesContainer);
-    }
-    if(isElementInViewport(hallFormation)){
-      addFadeInClass(hallFormation);
-    }
-    if(isElementInViewport(historyheader)){
-      addFadeInClass(historyheader);
-    }
     if (isElementInViewport(quickFactHeader)) {
       addFadeInClass(quickFactHeader);
     }

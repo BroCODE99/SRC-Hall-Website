@@ -1,3 +1,6 @@
+:root{
+  --primary-color: #daa520;
+}
 /* header */
 header {
   min-height: 70vh;
@@ -223,11 +226,12 @@ header {
 
 .yearOfOperation {
   width: 100%;
+  padding: 0px 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  color: var(--primary-color);
+  color: gold;
 }
 .yearOfOperation .text {
   font-size: 22px;
@@ -250,6 +254,7 @@ header {
 /* cross and our calling (positive message) */
 .positiveMessage {
   width: 100%;
+  margin-bottom: 100px;
   height: 250px;
   opacity: 0;
 }
@@ -355,159 +360,189 @@ header {
   margin-left: 30px;
 }
 
-/* brief history section */
-.briefHistory {
-  width: 100vw;
-  padding-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #302f2f;
-  color: #fff;
-}
-.bgImageContainer {
-  position: absolute;
+
+
+/* hall management  */
+
+.srcHallManagement,
+.srcHallJCRCManagement{
   width: 100%;
-  height: 100%;
+  background-color: #fff;
+  padding-top: 50px;
 }
-
-.bgImage {
+.srcHallManagement .wrapper,
+.srcHallJCRCManagement .wrapper,
+.pagesContainer .wrapper{
+  max-width: 1250px;
+  margin: auto;
+}
+.hallManagementHeader,
+.JCRCManagementHeader{
+  margin: 20px 0px;
+  margin-bottom: 50px;
+}
+.srcHallManagementCardsConatainer{
   width: 100%;
-  height: 100%;
-  opacity: 0.1;
 }
-
-.briefHistory .wrapper {
-  max-width: 1024;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.srcHallManagementCardsConatainer a{
+  width: 300px;
+  height: 400px;
+  color: rgb(88, 76, 2);
 }
-
-.historyheader {
-  font-size: 50px;
-  margin-top: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 800;
-  color: var(--primary-color);
-  opacity: 0;
-}
-.hallFormation {
-  width: 60%;
-  margin-bottom: 30px;
-  text-align: center;
-  color: #ccc;
-  font-size: 18px;
-  opacity: 0;
-}
-
-.imagesContainer {
+.srcHallManagementCardsConatainer .leader,
+.srcHallManagementCardsConatainer .leaders{
   width: 100%;
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
+  margin: 20px 0px;
+  display: block;
 }
-.imagesContainer li {
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-}
-.imagesContainer li figure {
+.hMcard{
+  width: 300px;
+  height: 400px;
+  margin: 20px 0px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   display: flex;
   gap: 20px;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
-.imagesContainer li figure img {
-  width: 150px;
-  height: 150px;
-  border-radius: 20%;
-  box-shadow: 2px 10px 10px #000;
-  /* object-fit: cover; */
-}
-figcaption {
-  color: var(--primary-color);
-  font-weight: 800;
-}
-
-.showMoreHistory {
-  padding: 15px 25px;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--primary-color);
-  cursor: pointer;
-  color: #000;
-  transition: 0.3s ease;
-  z-index: 1000;
-  opacity: 0;
-}
-.showMoreHistory:hover {
-  background-color: rgb(219, 206, 133);
-}
-
-/* full history section */
-.hallHistory {
-  /* margin-top: -600px; */
-  position: relative;
-  padding: 0px;
-  line-height: 1.9rem;
+.cardImageContainer{
   width: 100%;
-  background-color: #000;
-  color: #ccc;
-  /* background: transparent; */
-  display: none;
-}
-.displayHistory {
-  display: block;
-}
-.closeHistory {
-  width: 50px;
-  height: 50px;
-  padding: 10px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 30px;
-  border: 1px solid var(--primary-color);
-  border-radius: 100%;
-  color: var(--primary-color);
+  height: 280px;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  overflow: hidden;
 }
-.hallHistory .wrapper {
-  padding: 50px 30px;
+
+.cardImage{
+  height: 100%;
+  transition: all 0.3s ease;
 }
-.hallHistory p {
-  margin: 30px 0px;
+.cardImage:hover{
+  scale: 1.1;
+  background-color: #eeebeb;
 }
-.hallHistory .listYears {
-  margin-left: 30px;
+.acronym{
+  width: 100%;
+  height: 100%;
+  font-size: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+  transition: .3s ease;
 }
-.hallHistory .list {
-  margin: 10px 0px;
-  list-style-type: circle;
+.acronym:hover{
+  background-color: #eeebeb;
+}
+.cardTxt{
+  height: 120px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.cardTxt:hover{
+  color: var(--primary-color);
+}
+.name{
+  width: 100%;
+  margin-top: -10px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.otherCategory{
+  margin-top: 50px;
+}
+
+.staff{
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* jcrc */
+.srcHallManagementCardsConatainer .leaders{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+
+/* alumni */
+.alumniContainer{
+  width: 100%;
+}
+.alumniContainer .wrapper{
+  max-width: 1250px;
+  margin: auto;
+}
+
+.alumnis {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex-wrap:wrap;
+  /* border: 3px solid; */
+}
+
+.alumni {
+  width: 300px;
+  height: 320px;
+  margin: 20px 0px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.alumni div {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.alumni img {
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.alumni img:hover {
+  scale: 1.1;
+  background-color: #eeebeb;
+}
+
+.alumni figcaption{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 22px;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
 }
 
 /* page nav section */
 .pagesContainer {
   width: 100%;
-  padding: 50px 0px;
+  padding: 20px 0px;
   background-color: whitesmoke;
 }
 .pBar {
-  background-color: var(--primary-color);
-  margin: 40px 0px;
-  margin-bottom: 20px;
+  width: 100px;
+  height: 5px;
 }
 .pageSectionHeader {
   font-size: 35px;
@@ -518,7 +553,7 @@ figcaption {
 
 .pageCards {
   width: 100%;
-  margin: 30px 0px;
+  margin: 10px 0px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -544,42 +579,8 @@ figcaption {
   color: #fff;
 }
 
-/* alumni */
 
-.alumnis {
-  width: 100%;
-  margin: 30px 0px;
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-.alumni {
-  width: 330px;
-  height: 170px;
-  border: none;
-  text-align: center;
-  border: 10px solid #ccc;
-  background: rgba(0, 0, 0);
-  overflow: hidden;
-  font-size: 18px;
-  text-transform: uppercase;
-}
 
-.alumni div {
-  width: 100%;
-  height: 120px;
-  overflow: hidden;
-}
-
-.alumni img {
-  width: 100%;
-  height: 100%;
-  /* object-fit: contain; */
-  transition: all 2s ease;
-}
-.alumni img:hover {
-  scale: 1.2;
-}
 
 /* hide elements */
 .hideElement {
@@ -670,31 +671,7 @@ figcaption {
     left: 5px;
     box-shadow: none;
   }
-  .briefHistory {
-    padding-bottom: 0px;
-  }
-  .historyheader {
-    width: 100%;
-    font-size: 25px;
-    margin-top: 10px;
-  }
-  .hallFormation {
-    width: 100%;
-    margin: 20px auto;
-    text-align: left;
-    font-weight: 500;
-  }
-  .imagesContainer {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap;
-  }
-  .imagesContainer li {
-    width: 45%;
-    height: 200px;
-  }
-
+  
   /*  */
   /* pages bar */
   .pBar {
@@ -711,14 +688,18 @@ figcaption {
     color: var(--primary-color);
   }
 
-  .alumni {
+  .alumniHeader{
+    text-align: center;
+  }
+
+  /* .alumni {
     width: 270px;
     height: 160px;
     border: none;
     font-size: 16px;
     text-align: center;
     border: 5px solid #ccc;
-  }
+  } */
 }
 
 @media screen and (max-width: 768px) {
@@ -759,11 +740,11 @@ figcaption {
   }
 
   /* alumni */
-  .alumnis {
+  /* .alumnis {
     justify-content: center;
     align-items: center;
   }
   .alumni {
     width: 80%;
-  }
+  } */
 }

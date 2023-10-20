@@ -47,35 +47,5 @@ closeCallingBtn.onclick = () =>{
 }
 
 
-  // toggle the display of history section
-  const showMoreHistory = document.querySelector('.showMoreHistory');
-  const briefHistory = document.querySelector('.briefHistory');
-  const hallHistory = document.querySelector('.hallHistory');
-  const closeHistory = document.querySelector('.closeHistory');
-
-  showMoreHistory.addEventListener('click', () =>{
-    briefHistory.classList.add('hideElement');
-    hallHistory.classList.add('displayHistory');
-  })
-
-  closeHistory.onclick = () =>{
-    briefHistory.classList.remove('hideElement');
-    hallHistory.classList.remove('displayHistory');
-  }
-
-
-
 });
 
-
-
-//   showMoreHistory.onclick  = () =>{
-//     briefHistory.classList.toggle('hideElement');
-//     hallHistory.classList.toggle('displayHistory');
-//   }
-//   closeHistory.onclick = () =>{
-//     briefHistory.classList.remove('hideElement');
-//     hallHistory.classList.remove('displayHistory');
-//   }
-
-// });
