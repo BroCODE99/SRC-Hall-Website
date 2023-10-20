@@ -1,5 +1,8 @@
-:root{
+:root {
   --primary-color: #daa520;
+}
+body {
+  overflow-x: hidden;
 }
 /* header */
 header {
@@ -360,53 +363,56 @@ header {
   margin-left: 30px;
 }
 
-
-
 /* hall management  */
 
 .srcHallManagement,
-.srcHallJCRCManagement{
+.srcHallJCRCManagement {
   width: 100%;
   background-color: #fff;
   padding-top: 50px;
+  overflow: hidden;
 }
 .srcHallManagement .wrapper,
 .srcHallJCRCManagement .wrapper,
-.pagesContainer .wrapper{
+.pagesContainer .wrapper {
   max-width: 1250px;
   margin: auto;
 }
 .hallManagementHeader,
-.JCRCManagementHeader{
+.JCRCManagementHeader {
   margin: 20px 0px;
   margin-bottom: 50px;
 }
-.srcHallManagementCardsConatainer{
+.srcHallManagementCardsConatainer {
   width: 100%;
 }
-.srcHallManagementCardsConatainer a{
+.srcHallManagementCardsConatainer a {
   width: 300px;
   height: 400px;
   color: rgb(88, 76, 2);
 }
 .srcHallManagementCardsConatainer .leader,
-.srcHallManagementCardsConatainer .leaders{
+.srcHallManagementCardsConatainer .leaders {
   width: 100%;
   margin: 20px 0px;
-  display: block;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.hMcard{
+.hMcard {
   width: 300px;
   height: 400px;
   margin: 20px 0px;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   display: flex;
   gap: 20px;
   flex-direction: column;
   align-items: center;
 }
-.cardImageContainer{
+.cardImageContainer {
   width: 100%;
   height: 280px;
   display: flex;
@@ -415,15 +421,15 @@ header {
   overflow: hidden;
 }
 
-.cardImage{
+.cardImage {
   height: 100%;
   transition: all 0.3s ease;
 }
-.cardImage:hover{
+.cardImage:hover {
   scale: 1.1;
   background-color: #eeebeb;
 }
-.acronym{
+.acronym {
   width: 100%;
   height: 100%;
   font-size: 120px;
@@ -431,12 +437,12 @@ header {
   justify-content: center;
   align-items: center;
   color: var(--primary-color);
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
-.acronym:hover{
+.acronym:hover {
   background-color: #eeebeb;
 }
-.cardTxt{
+.cardTxt {
   height: 120px;
   padding: 10px;
   display: flex;
@@ -445,21 +451,21 @@ header {
   align-items: center;
   transition: all 0.3s ease;
 }
-.cardTxt:hover{
+.cardTxt:hover {
   color: var(--primary-color);
 }
-.name{
+.name {
   width: 100%;
   margin-top: -10px;
   font-size: 22px;
   text-align: center;
 }
 
-.otherCategory{
+.otherCategory {
   margin-top: 50px;
 }
 
-.staff{
+.staff {
   width: 100%;
   display: flex;
   gap: 10px;
@@ -468,18 +474,17 @@ header {
 }
 
 /* jcrc */
-.srcHallManagementCardsConatainer .leaders{
+.srcHallManagementCardsConatainer .leaders {
   display: flex;
   gap: 30px;
   align-items: center;
 }
 
-
 /* alumni */
-.alumniContainer{
+.alumniContainehiddenr {
   width: 100%;
 }
-.alumniContainer .wrapper{
+.alumniContainer .wrapper {
   max-width: 1250px;
   margin: auto;
 }
@@ -488,7 +493,7 @@ header {
   width: 100%;
   display: flex;
   gap: 10px;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   /* border: 3px solid; */
 }
 
@@ -497,7 +502,8 @@ header {
   height: 320px;
   margin: 20px 0px;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   display: flex;
   gap: 20px;
   flex-direction: column;
@@ -523,7 +529,7 @@ header {
   background-color: #eeebeb;
 }
 
-.alumni figcaption{
+.alumni figcaption {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -579,9 +585,6 @@ header {
   color: #fff;
 }
 
-
-
-
 /* hide elements */
 .hideElement {
   display: none;
@@ -601,6 +604,13 @@ header {
   .wrapper {
     width: 100vw;
     margin: 0;
+    padding: 10px;
+  }
+  .srcHallManagement .wrapper,
+  .srcHallJCRCManagement .wrapper,
+  .pagesContainer .wrapper {
+    max-width: 100%;
+    margin: auto;
     padding: 10px;
   }
 
@@ -671,7 +681,7 @@ header {
     left: 5px;
     box-shadow: none;
   }
-  
+
   /*  */
   /* pages bar */
   .pBar {
@@ -688,7 +698,7 @@ header {
     color: var(--primary-color);
   }
 
-  .alumniHeader{
+  .alumniHeader {
     text-align: center;
   }
 
@@ -747,4 +757,37 @@ header {
   .alumni {
     width: 80%;
   } */
+}
+
+@media screen and (max-width: 630px) {
+ 
+.staff{
+  justify-content: center;
+}
+  .hMcard,
+  .alumni{
+    width: 280px;
+    height: 380px;
+    overflow: hidden;
+  }
+  .acronym{
+    width: 100%;
+    height: 100%;
+  }
+  .name{
+    font-size: 20px;
+  }
+
+  /* alumni */
+  .alumnis{
+    justify-content: center;
+  }
+  .alumni{
+    height: 340px;
+  }
+
+  /* related pages */
+  .pagesContainer{
+    padding-left: 20px;
+  }
 }
