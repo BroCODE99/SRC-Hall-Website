@@ -58,137 +58,165 @@
           <div class="news-wrapper">
                 <h4> <i class="fas fa-square" ></i> UPCOMING EVENTS </h4>
                 <section>
-                    <!--  -->
-                    <div class="card">
-                        <a href="#">
-                            <img src="../media/pictures/4.png" alt="pic">
-                            <h3>Collection of books at the hall and on campus</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
-                        </a>
-                    </div>
-                    <!--  -->
+                <!--  -->
+                    <form action="" method="post" class="card">
+                        <input type="hidden" name="event_id" value="1">
+                        <button type="submit">
+                        <img src="../media/pictures/events/akwaaba_week.jpg" alt="pic">
+                        <h3>It's Akwaaba week. Let's welcome all new innovators.</h3>
+                        <p>Monday, 25th November, 2023</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
+                        </button>
+                    </form>
+                <!--  -->
 
                     <!--  -->
-                    <div class="card">
-                        <a href="#">
-                            <img src="../media/pictures/frontview.jpeg" alt="pic">
-                            <h3>Collection of books</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                        </a>
-                    </div>
-                    <!--  -->
+                    <form action="" method="post" class="card">
+                        <input type="hidden" name="event_id" value="1">
+                        <button type="submit">
+                        <img src="../media/pictures/events/happy_sept.jpg" alt="pic">
+                        <h3>It's Akwaaba week. Let's welcome all new innovators.</h3>
+                        <p>Monday, 25th November, 2023</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
+                        </button>
+                    </form>
+                <!--  -->
+
+                <!--  -->
+                    <form action="" method="post" class="card">
+                        <input type="hidden" name="event_id" value="1">
+                        <button type="submit">
+                        <img src="../media/pictures/events/akwaaba_week.jpg" alt="pic">
+                        <h3>It's Akwaaba week. Let's welcome all new innovators.</h3>
+                        <p>Monday, 25th November, 2023</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
+                        </button>
+                    </form>
+                <!--  -->
+
+                <!--  -->
+                    <form action="" method="post" class="card">
+                        <input type="hidden" name="event_id" value="1">
+                        <button type="submit">
+                        <img src="../media/pictures/events/presidential_debate.jpg" alt="pic">
+                        <h3>It's Akwaaba week. Let's welcome all new innovators.</h3>
+                        <p>Monday, 25th November, 2023</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
+                        </button>
+                    </form>
+                <!--  -->
 
                     <!--  -->
-                    <div class="card">
-                        <a href="#">
-                            <img src="../media/pictures/about-us.jpg" alt="pic">
-                            <h3>Collection of books</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                        </a>
-                    </div>
-                    <!--  -->
+                    <form action="" method="post" class="card">
+                        <input type="hidden" name="event_id" value="1">
+                        <button type="submit">
+                        <img src="../media/pictures/events/akwaaba_week.jpg" alt="pic">
+                        <h3>It's Akwaaba week. Let's welcome all new innovators.</h3>
+                        <p>Monday, 25th November, 2023</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
+                        </button>
+                    </form>
+                <!--  -->
 
-                    <!--  -->
-                    <div class="card">
-                        <a href="#">
-                        <img src="../media/pictures/about-us.jpg" alt="pic">
-                        <h3>Collection of books</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                        </a>
-                    </div>
-                    <!--  -->
-
-                    <!--  -->
-                    <div class="card">
-                        <a href="#">
-                        <img src="../media/pictures/2a.png" alt="pic">
-                        <h3>Collection of books</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                        </a>
-                    </div>
-                    <!--  -->
-
-                    <!--  -->
-                    <div class="card">
-                        <a href="#">
-                        <img src="../media/pictures/about-us.jpg" alt="pic">
-                        <h3>Collection of books</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                        </a>
-                    </div>
-                    <!--  -->
+                   <!--  -->
+                   <form action="" method="post" class="card">
+                        <input type="hidden" name="event_id" value="1">
+                        <button type="submit">
+                        <img src="../media/pictures/events/akwaaba_week.jpg" alt="pic">
+                        <h3>It's Akwaaba week. Let's welcome all new innovators.</h3>
+                        <p>Monday, 25th November, 2023</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
+                        </button>
+                    </form>
+                <!--  -->
 
                 </section>
             </div>   
         </section>
     </section>    
 
-          <!-- end latest of news -->
+          <!-- end upcoming events -->
           <!-- -------------------------------------------------------------------- -->
+          <hr class="line-separator">
+
+
+          <!-- older news -->
     <section class="older-events-container">
         <section class="news-and-events-wrapper">
           <!-- events -->
           <div class="events-wrapper">
             <h4> <i class="fas fa-square" ></i> PAST EVENTS</h4>
             <section>
-                <!--  -->
-                <div class="card">
-                <a href="#">
-                  <img src="../media/pictures/3.png" alt="pic">
-                  <h3>Collection of books</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                  </a>
-                </div>
-                <!--  -->
-
-                <!--  -->
-                <div class="card">
-                  <a href="#">
-                  <img src="../media/pictures/frontview.jpeg" alt="pic">
-                  <h3>Collection of books</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                  </a>
-                </div>
+                 <!--  -->
+                 <form action="" method="post" class="card">
+                        <input type="hidden" name="event_id" value="1">
+                        <button type="submit">
+                        <img src="../media/pictures/events/presidential_debate.jpg" alt="pic">
+                        <h3>It's Akwaaba week. Let's welcome all new innovators.</h3>
+                        <p>Monday, 25th November, 2023</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
+                        </button>
+                    </form>
                 <!--  -->
 
                 <!--  -->
-                <div class="card">
-                <a href="#">
-                  <img src="../media/pictures/4.png" alt="pic">
-                  <h3>Collection of books</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                  </a>
-                </div>
+                <form action="" method="post" class="card">
+                        <input type="hidden" name="event_id" value="1">
+                        <button type="submit">
+                        <img src="../media/pictures/events/presidential_debate.jpg" alt="pic">
+                        <h3>It's Akwaaba week. Let's welcome all new innovators.</h3>
+                        <p>Monday, 25th November, 2023</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
+                        </button>
+                    </form>
                 <!--  -->
 
                 <!--  -->
-                <div class="card">
-                <a href="#">
-                  <img src="../media/pictures/frontview.jpeg" alt="pic">
-                  <h3>Collection of books</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                  </a>
-                </div>
+                <form action="" method="post" class="card">
+                        <input type="hidden" name="event_id" value="1">
+                        <button type="submit">
+                        <img src="../media/pictures/events/presidential_debate.jpg" alt="pic">
+                        <h3>It's Akwaaba week. Let's welcome all new innovators.</h3>
+                        <p>Monday, 25th November, 2023</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
+                        </button>
+                    </form>
                 <!--  -->
 
                 <!--  -->
-                <div class="card">
-                <a href="#">
-                  <img src="../media/pictures/frontview.jpeg" alt="pic">
-                  <h3>Collection of books</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                  </a>
-                </div>
+                <form action="" method="post" class="card">
+                        <input type="hidden" name="event_id" value="1">
+                        <button type="submit">
+                        <img src="../media/pictures/events/presidential_debate.jpg" alt="pic">
+                        <h3>It's Akwaaba week. Let's welcome all new innovators.</h3>
+                        <p>Monday, 25th November, 2023</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
+                        </button>
+                    </form>
                 <!--  -->
 
                 <!--  -->
-                <div class="card">
-                <a href="#">
-                  <img src="../media/pictures/2a.png" alt="pic">
-                  <h3>Collection of books</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                  </a>
-                </div>
+                <form action="" method="post" class="card">
+                        <input type="hidden" name="event_id" value="1">
+                        <button type="submit">
+                        <img src="../media/pictures/events/presidential_debate.jpg" alt="pic">
+                        <h3>It's Akwaaba week. Let's welcome all new innovators.</h3>
+                        <p>Monday, 25th November, 2023</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
+                        </button>
+                    </form>
+                <!--  -->
+
+                <!--  -->
+                <form action="" method="post" class="card">
+                        <input type="hidden" name="event_id" value="1">
+                        <button type="submit">
+                        <img src="../media/pictures/events/presidential_debate.jpg" alt="pic">
+                        <h3>It's Akwaaba week. Let's welcome all new innovators.</h3>
+                        <p>Monday, 25th November, 2023</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
+                        </button>
+                    </form>
                 <!--  -->
 
               </section>

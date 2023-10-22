@@ -37,7 +37,13 @@ a {
   margin: 0 auto;
   padding: 0 1.2rem;
 }
-
+.line-separator {
+  width: 100%;
+  color: #daa520;
+  height: 10px;
+  background: #daa520;
+  border: none;
+}
 /* header */
 
 header {

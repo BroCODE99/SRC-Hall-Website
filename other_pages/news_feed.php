@@ -1,3 +1,14 @@
+<?php 
+    include '../database_connection/connection_instance.php';
+
+    $select_query = "SELECT * FROM news ORDER BY news_id DESC;";
+    $news_stmt = $connection->prepare($select_query);
+    $news_stmt->execute();
+    $news = $news_stmt->fetchAll();
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 
@@ -61,64 +72,28 @@
                 <h4> <i class="fas fa-square" ></i> LATEST NEWS </h4>
                 <section>
                     <!--  -->
-                    <div class="card">
+                    <!-- <div class="card">
                         <a href="#">
                             <img src="../media/pictures/4.png" alt="pic">
                             <h3>Collection of books at the hall and on campus</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
                         </a>
-                    </div>
+                    </div> -->
                     <!--  -->
 
                     <!--  -->
-                    <div class="card">
-                        <a href="#">
-                            <img src="../media/pictures/frontview.jpeg" alt="pic">
-                            <h3>Collection of books</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                        </a>
-                    </div>
-                    <!--  -->
-
-                    <!--  -->
-                    <div class="card">
-                        <a href="#">
-                            <img src="../media/pictures/about-us.jpg" alt="pic">
-                            <h3>Collection of books</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                        </a>
-                    </div>
-                    <!--  -->
-
-                    <!--  -->
-                    <div class="card">
-                        <a href="#">
-                        <img src="../media/pictures/about-us.jpg" alt="pic">
-                        <h3>Collection of books</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                        </a>
-                    </div>
-                    <!--  -->
-
-                    <!--  -->
-                    <div class="card">
-                        <a href="#">
-                        <img src="../media/pictures/2a.png" alt="pic">
-                        <h3>Collection of books</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                        </a>
-                    </div>
-                    <!--  -->
-
-                    <!--  -->
-                    <div class="card">
-                        <a href="#">
-                        <img src="../media/pictures/about-us.jpg" alt="pic">
-                        <h3>Collection of books</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                        </a>
-                    </div>
-                    <!--  -->
+              <?php foreach ($news as $new) { ?> 
+                <form action="" method="post" class="card">
+                <input type="hidden" name="news_id" value="<?= $new->news_id; ?>">
+                <button type="submit">
+                  <img src="../media/pictures/news_feed/<?= $new->image; ?>" alt="pic">
+                  <h3><?= $new->headline; ?></h3>
+                  <p><?= $new->news_date; ?></p>
+                  <p><?= $new->body; ?> </p>
+                </button>
+                </form>
+                <?php } ?>
+              <!--  -->
 
                 </section>
             </div>   
@@ -127,6 +102,11 @@
 
           <!-- end latest of news -->
           <!-- -------------------------------------------------------------------- -->
+          <hr class="line-separator">
+
+
+          
+          <!-- older news -->
     <section class="older-news-container">
         <section class="news-and-events-wrapper">
           <!-- events -->

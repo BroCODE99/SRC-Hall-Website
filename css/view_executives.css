@@ -1,0 +1,35 @@
+/* header */
+header {
+  min-height: 40vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../media/pictures/4.png") center/cover no-repeat fixed;
+}
+
+/* -------------------------------------------------------------------- */
+
+/* view wrapper */
+
+.view-wrapper {
+  max-width: 1320px;
+  margin: 0 auto;
+  background: #000000;
+  color: #ffffff;
+  padding: 0 50px;
+  font-family: Poppins, "Times New Roman", Times, serif;
+}
+
+.hall-exec-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.executive-item {
+  width: 22%;
+  text-align: center;
+}
+
+.executive-item img {
+  border: 5px solid #daa520;
+}

@@ -3,10 +3,11 @@
 class Database {
 
 
-    private $severName = "localhost";
-    private $userName = "root";
-    private $password = "";
-    private $database_name = "ostello_DB";
+    private $severName = "127.0.0.1";
+    private $userName = "edu_mensah";
+    // private $password = "";
+    private $password = "Edu@mensah@1008";
+    private $database_name = "uccsrchallDB";
     private $connect;
 
     

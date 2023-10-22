@@ -1,5 +1,13 @@
 <?php 
     // include_once 'includes/header.php';
+    include 'database_connection/connection_instance.php';
+
+    $select_query = "SELECT * FROM news ORDER BY news_id DESC;";
+    $news_stmt = $connection->prepare($select_query);
+    $news_stmt->execute();
+    $news = $news_stmt->fetchAll();
+
+
 ?>
 
 
@@ -77,8 +85,7 @@
 
 
 
-    
-   
+
 
 
 <!--  being-innovator-wrapper -->
@@ -126,63 +133,39 @@
             <h4> <i class="fas fa-square" ></i> LATEST NEWS </h4>
             <section>
               <!--  -->
-              <div class="card">
-              <a href="#">
-                <img src="media/pictures/about-us.jpg" alt="pic">
-                <h3>Collection of books at the hall and on campus</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
-                </a>
-              </div>
-              <!--  -->
-
-              <!--  -->
-              <div class="card">
+              <!-- <div class="card">
                 <a href="#">
-                <img src="media/pictures/frontview.jpeg" alt="pic">
-                <h3>Collection of books</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
+                  <img src="media/pictures/news_feed/congrat.jpg" alt="pic">
+                  <h3>Congratulations on your admission to University of Cape Coast (UCC)</h3>
+                  <p>Monday, 12th October, 2023</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
                 </a>
-              </div>
+              </div> -->
+
+              <!--  -->
+              <?php foreach ($news as $new) { ?> 
+                <form action="" method="post" class="card">
+                <input type="hidden" name="news_id" value="<?= $new->news_id; ?>">
+                <button type="submit">
+                  <img src="media/pictures/news_feed/<?= $new->image; ?>" alt="pic">
+                  <h3><?= $new->headline; ?></h3>
+                  <p><?= $new->news_date; ?></p>
+                  <p><?= $new->body; ?> </p>
+                </button>
+                </form>
+                <?php } ?>
               <!--  -->
 
               <!--  -->
-              <div class="card">
-              <a href="#">
-                <img src="media/pictures/about-us.jpg" alt="pic">
-                <h3>Collection of books</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                </a>
-              </div>
-              <!--  -->
-
-              <!--  -->
-              <div class="card">
-              <a href="#">
-                <img src="media/pictures/about-us.jpg" alt="pic">
-                <h3>Collection of books</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                </a>
-              </div>
-              <!--  -->
-
-              <!--  -->
-              <div class="card">
-              <a href="#">
-                <img src="media/pictures/about-us.jpg" alt="pic">
-                <h3>Collection of books</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                </a>
-              </div>
-              <!--  -->
-
-              <!--  -->
-              <div class="card">
-              <a href="#">
-                <img src="media/pictures/about-us.jpg" alt="pic">
-                <h3>Collection of books</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                </a>
-              </div>
+              <!-- <form action="" method="post" class="card">
+                <input type="hidden" name="news_id" value="1">
+                <button type="submit">
+                  <img src="media/pictures/news_feed/oct_aware.jpg" alt="pic">
+                  <h3>Congratulations on your admission to University of Cape Coast (UCC)</h3>
+                  <p>Monday, 12th October, 2023</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
+                </button>
+                </form> -->
               <!--  -->
 
             </section>
@@ -191,73 +174,93 @@
             <a href="#" class="primary-btn" >VIEW MORE STORIES</a>
 
           </div>
+        </section>
+
+      </section>
 
           <!-- end of news -->
           <!-- -------------------------------------------------------------------- -->
+          <hr class="line-separator">
+      <section class="news-and-events-container">
+        <section class="news-and-events-wrapper">
 
           <!-- events -->
           <div class="events-wrapper">
             <h4> <i class="fas fa-square" ></i> UPCOMING EVENTS</h4>
             <section>
                 <!--  -->
-                <div class="card">
-                <a href="#">
-                  <img src="media/pictures/frontview.jpeg" alt="pic">
-                  <h3>Collection of books</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                  </a>
-                </div>
+              <form action="" method="post" class="card">
+                <input type="hidden" name="event_id" value="1">
+                <button type="submit">
+                  <img src="media/pictures/events/akwaaba_week.jpg" alt="pic">
+                  <h3>It's Akwaaba week. Let's welcome all new innovators.</h3>
+                  <p>Monday, 25th November, 2023</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
+                </button>
+              </form>
                 <!--  -->
 
-                <!--  -->
-                <div class="card">
-                  <a href="#">
-                  <img src="media/pictures/frontview.jpeg" alt="pic">
-                  <h3>Collection of books</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                  </a>
-                </div>
-                <!--  -->
-
-                <!--  -->
-                <div class="card">
-                <a href="#">
-                  <img src="media/pictures/frontview.jpeg" alt="pic">
-                  <h3>Collection of books</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                  </a>
-                </div>
+                    <!--  -->
+              <form action="" method="post" class="card">
+                <input type="hidden" name="event_id" value="1">
+                <button type="submit">
+                  <img src="media/pictures/events/presidential_debate.jpg" alt="pic">
+                  <h3>It's Akwaaba week. Let's welcome all new innovators.</h3>
+                  <p>Monday, 25th November, 2023</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
+                </button>
+              </form>
                 <!--  -->
 
-                <!--  -->
-                <div class="card">
-                <a href="#">
-                  <img src="media/pictures/frontview.jpeg" alt="pic">
-                  <h3>Collection of books</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                  </a>
-                </div>
-                <!--  -->
-
-                <!--  -->
-                <div class="card">
-                <a href="#">
-                  <img src="media/pictures/frontview.jpeg" alt="pic">
-                  <h3>Collection of books</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                  </a>
-                </div>
+                    <!--  -->
+              <form action="" method="post" class="card">
+                <input type="hidden" name="event_id" value="1">
+                <button type="submit">
+                  <img src="media/pictures/events/akwaaba_week.jpg" alt="pic">
+                  <h3>It's Akwaaba week. Let's welcome all new innovators.</h3>
+                  <p>Monday, 25th November, 2023</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
+                </button>
+              </form>
                 <!--  -->
 
+                    <!--  -->
+              <form action="" method="post" class="card">
+                <input type="hidden" name="event_id" value="1">
+                <button type="submit">
+                  <img src="media/pictures/events/presidential_debate.jpg" alt="pic">
+                  <h3>It's Akwaaba week. Let's welcome all new innovators.</h3>
+                  <p>Monday, 25th November, 2023</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
+                </button>
+              </form>
                 <!--  -->
-                <div class="card">
-                <a href="#">
-                  <img src="media/pictures/frontview.jpeg" alt="pic">
-                  <h3>Collection of books</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                  </a>
-                </div>
+
+                    <!--  -->
+              <form action="" method="post" class="card">
+                <input type="hidden" name="event_id" value="1">
+                <button type="submit">
+                  <img src="media/pictures/events/akwaaba_week.jpg" alt="pic">
+                  <h3>It's Akwaaba week. Let's welcome all new innovators.</h3>
+                  <p>Monday, 25th November, 2023</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
+                </button>
+              </form>
                 <!--  -->
+
+                    <!--  -->
+              <form action="" method="post" class="card">
+                <input type="hidden" name="event_id" value="1">
+                <button type="submit">
+                  <img src="media/pictures/events/presidential_debate.jpg" alt="pic">
+                  <h3>It's Akwaaba week. Let's welcome all new innovators.</h3>
+                  <p>Monday, 25th November, 2023</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
+                </button>
+              </form>
+                <!--  -->
+
+                
 
               </section>
 

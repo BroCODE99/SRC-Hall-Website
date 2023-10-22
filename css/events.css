@@ -52,32 +52,35 @@ header {
   gap: 30px;
   margin: 50px 0;
 }
+/* -------------- */
 .card {
   width: 30%;
   /* padding: 10px; */
-  box-shadow: 0 0 15px 3px #ffffff30;
+  box-shadow: 0 0 15px 3px #00000030;
   /* height: 400px; */
   transition: all 0.3s ease-in-out;
   line-height: 1.3;
   overflow: hidden;
-  background: #000000;
 }
-.card a {
-  text-decoration: none;
+.card button {
+  border: none;
   color: #000000;
+  padding: 0 10px;
+  cursor: pointer;
 }
 .card h3 {
   margin: 10px 0;
-  padding: 10px;
-  color: #daa520;
+  padding: 0 10px;
+  text-align: left;
 }
 
 .card p {
-  color: #ffffff;
+  color: #4e4d49;
   padding: 10px;
+  text-align: left;
 }
 .card:hover {
-  box-shadow: 0 0 20px 10px #daa52065;
+  box-shadow: 0 0 10px 5px #daa52050;
   transform: translateY(2px);
 }
 
