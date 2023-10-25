@@ -16,7 +16,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="../media/logos/srch.png" type="image/x-icon">
-    <title>UCC SRC HALL | News Feed </title>
+    <title>UCC SRC HALL | Notice </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font awesome icon -->
     <link rel="stylesheet" href="fontawesome/css/all.css?v=<?= time();?>">
@@ -25,7 +25,7 @@
 
         <!-- css -->
     <link rel="stylesheet" href="../css/index.css?v=<?= time();?>">
-    <link rel="stylesheet" href="../css/news_feed.css?v=<?= time();?>">
+    <link rel="stylesheet" href="../css/notice.css?v=<?= time();?>">
 </head>
 
 <body>
@@ -37,8 +37,8 @@
                 <a href="../index.php" class="navbar-brand"><img src="../media/logos/srch1.png" alt="logo"></a>
                 <div class="navbar-nav">
                     <a  href="../index.php">home</a>
-                    <a id="active-link" href="news_feed.php">news feed</a>
-                    <a href="events.php">events</a>
+                    <a id="active-link" href="notice.php">Notice</a>
+                    <!-- <a href="events.php">events</a> -->
                     <a href="gallery.php">gallery</a>
                     <a href="contact.php">contact</a>
                     <a href="about.php">about</a>
@@ -51,10 +51,12 @@
                 ?>
                 <!--  -->
             </div>
+     
+
         </nav>
         <div class="banner">
             <div class="container">
-                <h1 class="banner-title"> HALL NEWS</h1>
+                <h1 class="banner-title"> HALL NOTICE</h1>
                 <p>... exceeding expectations.</p>
             </div>
         </div>
@@ -69,7 +71,7 @@
           <!-- <h2 class="header-text"> Hall News </h2> -->
           <!-- news -->
           <div class="news-wrapper">
-                <h4> <i class="fas fa-square" ></i> LATEST NEWS </h4>
+                <!-- <h4> <i class="fas fa-square" ></i> LATEST NOTICE </h4> -->
                 <section>
                     <!--  -->
                     <!-- <div class="card">
@@ -90,6 +92,7 @@
                   <h3><?= $new->headline; ?></h3>
                   <p><?= $new->news_date; ?></p>
                   <p><?= $new->body; ?> </p>
+                  <p class="secondary-btn" >Read more&gt;&gt;</p>
                 </button>
                 </form>
                 <?php } ?>
@@ -100,92 +103,12 @@
         </section>
     </section>    
 
-          <!-- end latest of news -->
+          <!-- end latest of notice -->
           <!-- -------------------------------------------------------------------- -->
           <hr class="line-separator">
 
 
-          
-          <!-- older news -->
-    <section class="older-news-container">
-        <section class="news-and-events-wrapper">
-          <!-- events -->
-          <div class="events-wrapper">
-            <h4> <i class="fas fa-square" ></i> OLDER NEWS</h4>
-            <section>
-                <!--  -->
-                <div class="card">
-                <a href="#">
-                  <img src="../media/pictures/3.png" alt="pic">
-                  <h3>Collection of books</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                  </a>
-                </div>
-                <!--  -->
-
-                <!--  -->
-                <div class="card">
-                  <a href="#">
-                  <img src="../media/pictures/frontview.jpeg" alt="pic">
-                  <h3>Collection of books</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                  </a>
-                </div>
-                <!--  -->
-
-                <!--  -->
-                <div class="card">
-                <a href="#">
-                  <img src="../media/pictures/4.png" alt="pic">
-                  <h3>Collection of books</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                  </a>
-                </div>
-                <!--  -->
-
-                <!--  -->
-                <div class="card">
-                <a href="#">
-                  <img src="../media/pictures/frontview.jpeg" alt="pic">
-                  <h3>Collection of books</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                  </a>
-                </div>
-                <!--  -->
-
-                <!--  -->
-                <div class="card">
-                <a href="#">
-                  <img src="../media/pictures/frontview.jpeg" alt="pic">
-                  <h3>Collection of books</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                  </a>
-                </div>
-                <!--  -->
-
-                <!--  -->
-                <div class="card">
-                <a href="#">
-                  <img src="../media/pictures/2a.png" alt="pic">
-                  <h3>Collection of books</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt suscipit voluptatibus quo explicabo provident nobis?</p>
-                  </a>
-                </div>
-                <!--  -->
-
-              </section>
-
-          </div>
-        </section>
-    </section>    
-          <!-- end of events -->
-            <!-- --------------------------------------------------------------------- -->
- 
-
-
-
-
-
+     
 
 
 

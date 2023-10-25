@@ -25,8 +25,8 @@
             <a href="../index.php" class="navbar-brand"><img src="../media/logos/srch1.png" alt="logo"></a>
                 <div class="navbar-nav">
                     <a  href="../index.php">home</a>
-                    <a href="news_feed.php">news feed</a>
-                    <a id="active-link" href="events.php">events</a>
+                    <a href="news_feed.php">notice </a>
+                    <!-- <a id="active-link" href="events.php">events</a> -->
                     <a href="gallery.php">gallery</a>
                     <a href="contact.php">contact</a>
                     <a href="about.php">about</a>

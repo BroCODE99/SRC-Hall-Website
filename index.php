@@ -32,14 +32,14 @@
 
 <!-- ---------------------------------------------------------------------------- -->
     <!-- header -->
-    <header>
+    <header id="top">
       <nav class = "navbar">
         <div class = "container">
           <div> <a href = "index.php" class = "navbar-brand"><img src="media/logos/srch1.png" alt="logo"></a> </div>
             <div class = "navbar-nav">
               <a id="active-link" href = "index.php">home</a>
-              <a href = "other_pages/news_feed.php">news feed</a>
-              <a href = "other_pages/events.php">events</a>
+              <a href = "other_pages/notice.php">notice</a>
+              <!-- <a href = "other_pages/events.php">events</a> -->
               <a href = "other_pages/gallery.php">gallery</a>
               <a href = "other_pages/contact.php">contact</a>
               <a href = "other_pages/about.php">about</a>
@@ -57,8 +57,8 @@
             </div>
               <ul>
                 <li><a href="index.php">Home</a></li>
-                <li><a href="other_pages/news_feed.php">News Feed</a></li>
-                <li><a href="other_pages/events.php">Events</a></li>
+                <li><a href="other_pages/notice.php">notice</a></li>
+                <!-- <li><a href="other_pages/events.php">Events</a></li> -->
                 <li><a href="other_pages/gallery.php">Gallery</a></li>
                 <li><a href="other_pages/contact.php">Contact</a></li>
                 <li><a href="other_pages/about.php">About</a></li>
@@ -74,8 +74,8 @@
           <h4 class = "banner-title">The home of  the Innovators</h4>
           <p>we exceed expectations...</p>
           <div class="banner-btn">
-            <a href="#" class="primary-btn">WATCH THE VIDEO <i class = "fas fa-play-circle" ></i> </a>
-            <a href="#" class="secondary-btn">BROWSE GALLERY </i></a>
+            <a href="other_pages/gallery.php" class="primary-btn">WATCH THE VIDEO <i class = "fas fa-play-circle" ></i> </a>
+            <a href="other_pages/gallery.php" class="secondary-btn">BROWSE GALLERY </i></a>
           </div>
         </div>
       </div>
@@ -127,10 +127,10 @@
       <section class="news-and-events-container">
         <section class="news-and-events-wrapper">
           <hr>
-          <h2 class="header-text"> News &amp; Events </h2>
+          <h2 class="header-text"> LATEST NOTICE </h2>
           <!-- news -->
           <div class="news-wrapper">
-            <h4> <i class="fas fa-square" ></i> LATEST NEWS </h4>
+            <!-- <h4> <i class="fas fa-square" ></i> LATEST NEWS </h4> -->
             <section>
               <!--  -->
               <!-- <div class="card">
@@ -151,6 +151,7 @@
                   <h3><?= $new->headline; ?></h3>
                   <p><?= $new->news_date; ?></p>
                   <p><?= $new->body; ?> </p>
+                  <p class="secondary-btn" >Read more&gt;&gt;</p>
                 </button>
                 </form>
                 <?php } ?>
@@ -178,101 +179,105 @@
 
       </section>
 
-          <!-- end of news -->
-          <!-- -------------------------------------------------------------------- -->
+          <!-- end of notice -->
           <hr class="line-separator">
-      <section class="news-and-events-container">
-        <section class="news-and-events-wrapper">
 
-          <!-- events -->
-          <div class="events-wrapper">
-            <h4> <i class="fas fa-square" ></i> UPCOMING EVENTS</h4>
-            <section>
+
+    <section class="exec-wrapper">
+      <div class="hall-admin">
+          <h2>Hall Administration</h2>
+          <div class="hall-exec-group">
                 <!--  -->
-              <form action="" method="post" class="card">
-                <input type="hidden" name="event_id" value="1">
-                <button type="submit">
-                  <img src="media/pictures/events/akwaaba_week.jpg" alt="pic">
-                  <h3>It's Akwaaba week. Let's welcome all new innovators.</h3>
-                  <p>Monday, 25th November, 2023</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
-                </button>
-              </form>
+                <div class="executive-item">
+                    <img src="media/pictures/4.png" alt="image">
+                    <span>PRESIDENT</span>
+                    <p>Jude Smith</p>
+                    <span>2015 - 2022</span>
+                </div>
+
                 <!--  -->
 
-                    <!--  -->
-              <form action="" method="post" class="card">
-                <input type="hidden" name="event_id" value="1">
-                <button type="submit">
-                  <img src="media/pictures/events/presidential_debate.jpg" alt="pic">
-                  <h3>It's Akwaaba week. Let's welcome all new innovators.</h3>
-                  <p>Monday, 25th November, 2023</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
-                </button>
-              </form>
+                <!--  -->
+                <div class="executive-item">
+                    <img src="media/pictures/4.png" alt="image">
+                    <span>PRESIDENT</span>
+                    <p>Jude Smith</p>
+                    <span>2015 - 2022</span>
+                </div>
+
                 <!--  -->
 
-                    <!--  -->
-              <form action="" method="post" class="card">
-                <input type="hidden" name="event_id" value="1">
-                <button type="submit">
-                  <img src="media/pictures/events/akwaaba_week.jpg" alt="pic">
-                  <h3>It's Akwaaba week. Let's welcome all new innovators.</h3>
-                  <p>Monday, 25th November, 2023</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
-                </button>
-              </form>
+                <!--  -->
+                <div class="executive-item">
+                    <img src="media/pictures/4.png" alt="image">
+                    <span>PRESIDENT</span>
+                    <p>Jude Smith</p>
+                    <span>2015 - 2022</span>
+                </div>
+
                 <!--  -->
 
-                    <!--  -->
-              <form action="" method="post" class="card">
-                <input type="hidden" name="event_id" value="1">
-                <button type="submit">
-                  <img src="media/pictures/events/presidential_debate.jpg" alt="pic">
-                  <h3>It's Akwaaba week. Let's welcome all new innovators.</h3>
-                  <p>Monday, 25th November, 2023</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
-                </button>
-              </form>
                 <!--  -->
-
-                    <!--  -->
-              <form action="" method="post" class="card">
-                <input type="hidden" name="event_id" value="1">
-                <button type="submit">
-                  <img src="media/pictures/events/akwaaba_week.jpg" alt="pic">
-                  <h3>It's Akwaaba week. Let's welcome all new innovators.</h3>
-                  <p>Monday, 25th November, 2023</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
-                </button>
-              </form>
-                <!--  -->
-
-                    <!--  -->
-              <form action="" method="post" class="card">
-                <input type="hidden" name="event_id" value="1">
-                <button type="submit">
-                  <img src="media/pictures/events/presidential_debate.jpg" alt="pic">
-                  <h3>It's Akwaaba week. Let's welcome all new innovators.</h3>
-                  <p>Monday, 25th November, 2023</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique nostrum perspiciatis itaque, deserunt </p>
-                </button>
-              </form>
-                <!--  -->
-
-                
-
-              </section>
-
-
-              <a href="#" class="primary-btn" >VIEW MORE EVENTS</a>
-
+                <div class="executive-item">
+                    <img src="media/pictures/4.png" alt="image">
+                    <span>PRESIDENT</span>
+                    <p>Jude Smith</p>
+                    <span>2015 - 2022</span>
+                </div>
           </div>
-          <!-- end of events -->
-            <!-- --------------------------------------------------------------------- -->
-        </section>
 
-      </section>
+        </div>
+        <!-- ----------------- -->
+
+
+
+        <!-- ----------------- -->
+        <div class="jcr-executives">
+          <h2>Junior Common Room (JCR) Executives</h2>
+          <div class="hall-exec-group">
+                <!--  -->
+                <div class="executive-item">
+                    <img src="media/pictures/4.png" alt="image">
+                    <span>PRESIDENT</span>
+                    <p>Jude Smith</p>
+                    <span>2015 - 2022</span>
+                </div>
+
+                <!--  -->
+
+                <!--  -->
+                <div class="executive-item">
+                    <img src="media/pictures/4.png" alt="image">
+                    <span>PRESIDENT</span>
+                    <p>Jude Smith</p>
+                    <span>2015 - 2022</span>
+                </div>
+
+                <!--  -->
+
+                <!--  -->
+                <div class="executive-item">
+                    <img src="media/pictures/4.png" alt="image">
+                    <span>PRESIDENT</span>
+                    <p>Jude Smith</p>
+                    <span>2015 - 2022</span>
+                </div>
+
+                <!--  -->
+
+                <!--  -->
+                <div class="executive-item">
+                    <img src="media/pictures/4.png" alt="image">
+                    <span>PRESIDENT</span>
+                    <p>Jude Smith</p>
+                    <span>2015 - 2022</span>
+                </div>
+          </div>
+
+        </div>
+
+    </section>
+
 
 
 
@@ -298,4 +303,3 @@
 <?php 
     include_once 'includes/footer.php';
 ?>
-

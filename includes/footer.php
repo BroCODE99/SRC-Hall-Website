@@ -29,9 +29,10 @@
           <h4>CONTACT</h4>
           <ul class>
             <li><i class="fas fa-phone" ></i> <i class="fab fa-whatsapp" ></i> +233 54 789 6582 </li>
-            <li><a href="#"> <i class = "fab fa-facebook-f"></i> uccsrchall </a></li>
-            <li><a href="#"> <i class = "fab fa-twitter"></i> uccsrchall </a></li>
+            <li><a href="#"> <i class = "fab fa-facebook-f"></i> SRC Hall </a></li>
+            <li><a href="#"> <i class = "fab fa-twitter"></i> @srchall_ucc </a></li>
             <li><a href="#"> <i class = "fab fa-instagram"></i> uccsrchall </a></li>
+            <li><a href="#"> <i class = "fab fa-youtube"></i> Nova Hall TV </a></li>
           </ul>
         </div>
       <!--  -->
@@ -48,7 +49,7 @@
         <a href = "#"><i class = "fab fa-facebook-f"></i></a>
         <a href = "#"><i class = "fab fa-twitter"></i></a>
         <a href = "#"><i class = "fab fa-instagram"></i></a>
-        <a href = "#"><i class = "fab fa-pinterest"></i></a>
+        <a href = "#"><i class = "fab fa-youtube"></i></a>
       </div>
       <span class="copyright-info">UccSrcHall &copy; <span id="copyright-date"></span></span>
       <span class="dev-info">Developed by: BROCODE - 054 545 7857 | 055 846 5569</span>

@@ -97,6 +97,7 @@
 .news-and-events-wrapper .header-text {
   font-size: 3rem;
   margin-bottom: 30px;
+  color: #ffffff;
 }
 .news-wrapper,
 .events-wrapper {
@@ -157,12 +158,46 @@
   transform: translateY(2px);
 }
 
-/*  
+/* ------------------------------- */
 
+/* executives wrapper */
 
+.exec-wrapper {
+  background: #000000;
+  color: #ffffff;
+  font-family: Poppins, "Times New Roman", Times, serif;
+  display: none;
+}
+.hall-admin,
+.jcr-executives {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+.hall-admin h2,
+.jcr-executives h2 {
+  padding: 20px 10px;
+  text-transform: uppercase;
+  background: #daa520;
+}
+.hall-exec-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
 
+.executive-item {
+  width: 23%;
+  text-align: center;
+}
 
-*/
+.executive-item img {
+  border: 5px solid #daa520;
+  margin: 10px 0;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 1200px) {
@@ -213,6 +248,7 @@
   }
   .news-and-events-wrapper .header-text {
     margin-bottom: 10px;
+    font-size: 1.5rem;
   }
   .news-wrapper section,
   .events-wrapper section {
