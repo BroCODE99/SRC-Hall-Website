@@ -1,11 +1,12 @@
 <?php 
     // include_once 'includes/header.php';
-    include 'database_connection/connection_instance.php';
+    require_once 'database_connection/connection_instance.php';
+    require_once 'functions/functions.php';
 
-    $select_query = "SELECT * FROM news ORDER BY news_id DESC;";
-    $news_stmt = $connection->prepare($select_query);
-    $news_stmt->execute();
-    $news = $news_stmt->fetchAll();
+    $select_query = "SELECT * FROM notice ORDER BY news_id DESC LIMIT 0,6;";
+    $notice_stmt = $connection->prepare($select_query);
+    $notice_stmt->execute();
+    $notice = $notice_stmt->fetchAll();
 
 
 ?>
@@ -57,7 +58,7 @@
             </div>
               <ul>
                 <li><a href="index.php">Home</a></li>
-                <li><a href="other_pages/notice.php">notice</a></li>
+                <li><a href="other_pages/notice.php">Notice</a></li>
                 <!-- <li><a href="other_pages/events.php">Events</a></li> -->
                 <li><a href="other_pages/gallery.php">Gallery</a></li>
                 <li><a href="other_pages/contact.php">Contact</a></li>
@@ -143,14 +144,14 @@
               </div> -->
 
               <!--  -->
-              <?php foreach ($news as $new) { ?> 
-                <form action="" method="post" class="card">
-                <input type="hidden" name="news_id" value="<?= $new->news_id; ?>">
+              <?php foreach ($notice as $note) { ?> 
+                <form action="configuration/notice_view_config.php" method="post" class="card">
+                <input type="hidden" name="news_id" value="<?= $note->news_id; ?>">
                 <button type="submit">
-                  <img src="media/pictures/news_feed/<?= $new->image; ?>" alt="pic">
-                  <h3><?= $new->headline; ?></h3>
-                  <p><?= $new->news_date; ?></p>
-                  <p><?= $new->body; ?> </p>
+                  <img src="media/pictures/news_feed/<?= $note->image; ?>" alt="pic">
+                  <h3><?= $note->headline; ?></h3>
+                  <p><?= format_date($note->news_date); ?></p>
+                  <p><?= substr($note->body,0,99); ?> </p>
                   <p class="secondary-btn" >Read more&gt;&gt;</p>
                 </button>
                 </form>
@@ -172,7 +173,7 @@
             </section>
 
             
-            <a href="#" class="primary-btn" >VIEW MORE STORIES</a>
+            <a href="other_pages/notice.php" class="primary-btn" >VIEW MORE STORIES</a>
 
           </div>
         </section>

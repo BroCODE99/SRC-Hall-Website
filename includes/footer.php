@@ -9,7 +9,7 @@
           <p>
           The SRC Hall provide the most maintained, decent, attractive and comfortable accommodation facility for our students. We also ensure that students get value for money for services rendered at the Hall. In addition, we provide well maintained community oriented facilities where residents and staff are empowered to learn, innovate and succeed in achieving personal and institutional objectives.
           </p>
-          <a href="../other_pages/about.php" class="read-more-btn">READ MORE&gt;&gt;</a>
+          <!-- <a href="../other_pages/about.php" class="read-more-btn">READ MORE&gt;&gt;</a> -->
         </div>
         <!--  -->
 
@@ -19,7 +19,7 @@
           <p>
           UCC SRC Hall is more than just a place to live. It is a community where you can make lifelong friends and memories. The hall has a diverse community of students from all over Ghana and the world, and a strong sense of community where students are encouraged to get involved in hall activities and to support each other. UCC SRC Hall also offers affordable accommodation to its students, with a number of financial aid options available to help students afford to live in the hall.
           </p>
-          <a href="../other_pages/about.php" class="read-more-btn">KNOW MORE&gt;&gt;</a>
+          <!-- <a href="../other_pages/about.php" class="read-more-btn">KNOW MORE&gt;&gt;</a> -->
         </div>
         <!--  -->
 

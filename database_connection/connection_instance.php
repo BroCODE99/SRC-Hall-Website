@@ -1,6 +1,6 @@
 <?php
 
-include_once 'database_connection.php';
+require_once 'database_connection.php';
 
     # instantiating database
     $database = new Database();

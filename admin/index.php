@@ -20,7 +20,7 @@
         <div class="login-wrapper">
             <div class="logo"><img src="../media/logos/srchh.png" alt="logo"></div>
             <h3 class="login-text-header"> ADMIN LOGIN</h3>
-            <form action="../configuration/login_process.php" method="post">
+            <form action="../configuration/login_config.php" method="post">
 
             <!--  -->
             <?php if (isset($_GET['email_error'])) {?>

@@ -47,29 +47,44 @@ header {
 
 .more-stories {
   padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.more-stories-item {
+  flex: 25%;
+}
+.more-stories-item form {
+  display: flex;
+  align-items: center;
 }
 
 .more-stories-item img {
-  width: 250px;
+  width: 200px;
   padding: 10px 15px;
 }
 
-.more-stories-item a {
+.more-stories-item button {
   color: #ffffff;
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
+  text-align: left;
   margin: 10px 0;
+  background: none;
+  border: none;
 }
-.more-stories-item a span {
+.more-stories-item button span {
   font-size: 12px;
   font-style: italic;
   color: #c9c9c9;
 }
-.more-stories-item a p {
+.more-stories-item button p {
   margin-top: 5px;
 }
 
-.more-stories-item a:hover {
+.more-stories-item button:hover {
   text-decoration: underline;
 }
 

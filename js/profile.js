@@ -8,49 +8,22 @@ const noticeWrapper = document.querySelector(".notice");
 const settingsWrapper = document.querySelector(".settings");
 const galleryWrapper = document.querySelector(".gallery");
 
-dashboardBtn.addEventListener("click", () => {
-  dashboardWrapper.classList.remove("inactive-page");
-  dashboardBtn.classList.add("active-btn");
-  noticeWrapper.classList.remove("active-page");
-  noticeBtn.classList.remove("active-btn");
-  settingsWrapper.classList.remove("active-page");
-  settingsBtn.classList.remove("active-btn");
-  galleryWrapper.classList.remove("active-page");
-  galleryBtn.classList.remove("active-btn");
-});
+//
+// noticeWrapper.addEventListener("click", () => {
+//   noticeBtn.classList.add("active-btn");
+//   dashboardBtn.classList.remove("active-btn");
+// });
 
 //
-noticeBtn.addEventListener("click", () => {
-  noticeWrapper.classList.add("active-page");
-  noticeBtn.classList.add("active-btn");
-  settingsWrapper.classList.remove("active-page");
-  settingsBtn.classList.remove("active-btn");
-  dashboardWrapper.classList.add("inactive-page");
-  dashboardBtn.classList.remove("active-btn");
-  galleryWrapper.classList.remove("active-page");
-  galleryBtn.classList.remove("active-btn");
+//
+//
+//
+const addBtn = document.querySelector(".add-btn");
+const createItemWrapper = document.querySelector(".create-item-wrapper");
+//
+addBtn.addEventListener("click", () => {
+  createItemWrapper.classList.toggle("create-wrapper-active");
 });
+//
 
 //
-settingsBtn.addEventListener("click", () => {
-  settingsWrapper.classList.add("active-page");
-  settingsBtn.classList.add("active-btn");
-  noticeWrapper.classList.remove("active-page");
-  noticeBtn.classList.remove("active-btn");
-  dashboardWrapper.classList.add("inactive-page");
-  dashboardBtn.classList.remove("active-btn");
-  galleryWrapper.classList.remove("active-page");
-  galleryBtn.classList.remove("active-btn");
-});
-
-//
-galleryBtn.addEventListener("click", () => {
-  galleryWrapper.classList.add("active-page");
-  galleryBtn.classList.add("active-btn");
-  settingsWrapper.classList.remove("active-page");
-  settingsBtn.classList.remove("active-btn");
-  noticeWrapper.classList.remove("active-page");
-  noticeBtn.classList.remove("active-btn");
-  dashboardWrapper.classList.add("inactive-page");
-  dashboardBtn.classList.remove("active-btn");
-});

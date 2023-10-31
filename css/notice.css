@@ -7,6 +7,34 @@ header {
 
 /* --------------------------------------------------------------------------- */
 
+/* pagination  */
+.pagination-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-btn,
+.previous-btn,
+.next-btn {
+  color: #000000;
+  font-size: 1.1rem;
+  padding: 15px;
+  border-radius: 50px;
+  background: #ffffff;
+  transition: all 0.3s ease-in-out;
+  margin: 0 5px;
+}
+.previous-btn,
+.next-btn {
+  background: #daa520;
+  padding: 15px 25px;
+  font-size: 1.5rem;
+}
+.pagination-btn:hover {
+  box-shadow: 0 0 15px 5px #ffffff80;
+}
+
 /* -------------------------------------- */
 /* News and events */
 .news-and-events-container {

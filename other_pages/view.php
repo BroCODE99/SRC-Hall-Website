@@ -1,3 +1,36 @@
+<?php 
+   require_once '../database_connection/connection_instance.php';
+   require_once '../functions/functions.php';
+   session_start();
+
+
+
+   if (isset($_SESSION['news_id'])) {
+       $news_id = $_SESSION['news_id'];
+   
+       $select_query = "SELECT * FROM notice WHERE news_id = :news_id;";
+       $notice_stmt = $connection->prepare($select_query);
+       $notice_stmt->execute(['news_id' => $news_id]);
+       $notice = $notice_stmt->fetch();
+
+
+    //    ###############
+
+        $select_all_query = "SELECT * FROM notice ORDER BY news_id DESC LIMIT 0,6;";
+        $notice_all_stmt = $connection->prepare($select_all_query);
+        $notice_all_stmt->execute();
+        $notice_all = $notice_all_stmt->fetchAll();
+   
+   
+   } else {
+       header("Location: ../index.php");
+       exit();
+   }
+
+?>
+
+
+
 <!DOCTYPE html>
 <html>
 
@@ -25,7 +58,7 @@
             <a href="../index.php" class="navbar-brand"><img src="../media/logos/srch1.png" alt="logo"></a>
                 <div class="navbar-nav">
                     <a  href="../index.php">home</a>
-                    <a href="news_feed.php">notice</a>
+                    <a href="notice.php">notice</a>
                     <!-- <a href="events.php">events</a> -->
                     <a href="gallery.php">gallery</a>
                     <a href="contact.php">contact</a>
@@ -55,18 +88,19 @@
 
 <section class="view-wrapper">
     <div class="main-story">
-        <img src="../media/pictures/3.png" alt="">
+        <img src="../media/pictures/news_feed/<?= $notice->image ?>" alt="">
         <div class="story-body">
-            <h3>Hello everyone.</h3>
-            <span>Sunday, 13th May, 2020</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsum nihil amet sapiente eius, suscipit dolorem perspiciatis praesentium consequuntur inventore nemo nisi, laudantium pariatur voluptate repudiandae illum quasi sint sunt veritatis eligendi sed nostrum. Labore, minima error voluptas fugiat in iste non dolorum eligendi neque repellendus quasi officiis, laudantium aspernatur facere? Fuga corrupti similique fugit ut. Error maiores voluptatum veniam facilis repudiandae provident voluptatem eaque debitis iure, amet obcaecati? Provident ullam, velit reprehenderit, explicabo commodi impedit fugit nobis quo rem, beatae nihil facere eum nesciunt autem tempore distinctio? Quod quisquam reiciendis dolorum dignissimos at recusandae tempore in pariatur soluta sint enim voluptatum repellat atque saepe adipisci libero delectus consequuntur officiis facere, aliquam accusamus nesciunt? Eos necessitatibus eum aspernatur vel minus nulla est eveniet, expedita dolore provident modi, iure magni consequuntur beatae laboriosam ipsam! Ducimus, ipsam ipsa assumenda veritatis consequatur est voluptate deleniti odit. Amet, hic
-            </p>
+            <h3><?= $notice->headline ?></h3>
+            <span><?= format_date($notice->news_date); ?></span>
             <p>
+                <?= $notice->body ?>
+            </p>
+            <!-- <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis ut quisquam omnis neque at ipsam nostrum vel tempore distinctio. Neque tempore ducimus amet possimus quibusdam aliquid laboriosam corporis quia omnis saepe quod ullam, mollitia, veniam asperiores nemo? Ex recusandae, non commodi dolores provident consequuntur, earum ullam in laboriosam maxime quis fugit quia? Repellendus ut, necessitatibus facilis porro vitae esse maxime molestias laborum minus nam, nobis neque cumque vel eveniet! Ullam, aliquam quidem pariatur voluptatibus totam, dolorum iusto harum quisquam corrupti voluptas quia sit 
             </p>
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique cum, officiis assumenda, saepe fugit debitis provident illum porro vel at aspernatur necessitatibus repudiandae facere soluta facilis distinctio inventore quo, aliquid sequi labore exercitationem ipsam. Sint saepe voluptate itaque rerum tempora, repellat eveniet facere tenetur libero. Obcaecati deserunt temporibus id et! Placeat facilis fugiat eveniet eum quaerat soluta ipsam ullam reprehenderit quibusdam similique autem commodi, vero recusandae aspernatur nemo tempore molestias quam hic aut libero mollitia totam praesentium. Cupiditate velit alias neque laudantium asperiores mollitia, dicta reiciendis architecto molestiae sed quidem eius impedit nostrum maiores praesentium sint explicabo. Culpa, repellendus deserunt.
-            </p>
+            </p> -->
         </div>
     </div>
    
@@ -82,22 +116,25 @@
 
     <div class="more-stories">
         <!--  -->
-        <div class="more-stories-item">
-            <a href="">
-                <img src="../media/pictures/about-us.jpg" alt="">
-                <div>
-                    <h3>Hello everyone.</h3>
-                    <span>Sunday, 13th May, 2020</span>
-                    <p>
-                    Obcaecati deserunt temporibus id et! Placeat facilis fugiat eveniet eum quaerat soluta ipsam ullam reprehenderit
-                    </p>
-                </div>
-            </a>
-        </div>
-        <!--  -->
+        
+        <?php foreach ($notice_all as $note) { ?> 
+            <div class="more-stories-item">
+                <form action="../configuration/notice_view_config.php" method="post">
+                <input type="hidden" name="news_id" value="<?= $note->news_id; ?>">
+                  <img src="../media/pictures/news_feed/<?= $note->image; ?>" alt="pic">
+                  <button type="submit">
+                  <h3><?= $note->headline; ?></h3>
+                  <span><?= format_date($note->news_date); ?></span>
+                </button>
+                </form>
+            </div>
+        <?php } ?>
+       
 
         <!--  -->
+<!--         
         <div class="more-stories-item">
+
             <a href="">
                 <img src="../media/pictures/about-us.jpg" alt="">
                 <div>
@@ -108,23 +145,10 @@
                     </p>
                 </div>
             </a>
-        </div>
+        </div> -->
         <!--  -->
 
-        <!--  -->
-        <div class="more-stories-item">
-            <a href="">
-                <img src="../media/pictures/about-us.jpg" alt="">
-                <div>
-                    <h3>Hello everyone.</h3>
-                    <span>Sunday, 13th May, 2020</span>
-                    <p>
-                    Obcaecati deserunt temporibus id et! Placeat facilis fugiat eveniet eum quaerat soluta ipsam ullam reprehenderit
-                    </p>
-                </div>
-            </a>
-        </div>
-        <!--  -->
+        
     </div>
 
 </div>
