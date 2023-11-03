@@ -36,7 +36,7 @@ if (isset($_GET['notice_page'])) {
     $notice_page = 1;
 }
 
-$num_per_page = 12;
+$num_per_page = 6;
 $start_page = ($notice_page - 1) * $num_per_page;
 
 $select_query = "SELECT * FROM notice ORDER BY news_id DESC LIMIT $start_page, $num_per_page;";
@@ -49,8 +49,25 @@ $notice = $notice_stmt->fetchAll();
 
 
 
-?>
 
+
+
+// getting error and success message
+
+$error_message = '';
+$success_message = '';
+
+if (isset($_GET['error'])) {
+    $error_message = $_GET['error'];
+} elseif (isset($_GET['success'])) {
+    $success_message = $_GET['success'];
+}
+
+
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,6 +85,7 @@ $notice = $notice_stmt->fetchAll();
 <link rel="stylesheet" href="../css/admin.css?v=<?= time();?>">
 </head>
 <body>
+
 <section class="profile-wrapper">
     <div class="profile-container">
         <div class="top-bar">
@@ -126,3 +144,11 @@ $notice = $notice_stmt->fetchAll();
                  <!-- content-wrapper  -->
      <div class="content-wrapper">
                     <!--  -->
+       <!-- notification -->
+        <p class="success-text">
+            <?= $success_message; ?>
+        </p>
+
+        <p class="error-text">
+            <?= $error_message; ?>
+        </p>
