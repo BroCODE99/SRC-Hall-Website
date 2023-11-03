@@ -29,7 +29,7 @@ if (isset($_POST['change'])) {
 
 
     ## Making database fetch
-    $admin_select_query = "SELECT * FROM administrators WHERE admin_id = :admin_id;";
+    $admin_select_query = "SELECT pass_word FROM administrators WHERE admin_id = :admin_id;";
             
     // Statement 
     $stmt_admin = $connection->prepare($admin_select_query);
@@ -38,7 +38,7 @@ if (isset($_POST['change'])) {
     $admin_data = $stmt_admin->fetch(PDO::FETCH_ASSOC);
 
     if (password_verify($new_password,$admin_data['pass_word'])) {
-        header("Location: ../admin/dashboard.php?password_error=You Cannot use old password again.");
+        header("Location: ../admin/dashboard.php?error=You Cannot use old password again.");
         exit();
     }
 

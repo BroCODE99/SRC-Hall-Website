@@ -5,6 +5,9 @@
     <div class="settings-btn add-btn">
         <i class="fas fa-cog"></i>
     </div>
+
+
+
            
     <div class="dashboard">
                         <!--  -->
@@ -49,14 +52,14 @@
                             <!--  -->
                        </div>
                 <?php 
-                        $all_notice_query ="SELECT * FROM notice;";
-                        $all_notice_stmt = $connection->prepare($all_notice_query);
-                        $all_notice_stmt->execute();
-                        $total_num_notice = $all_notice_stmt->rowCount();
+                        // $all_notice_query ="SELECT * FROM notice;";
+                        // $all_notice_stmt = $connection->prepare($all_notice_query);
+                        // $all_notice_stmt->execute();
+                        // $total_num_notice = $all_notice_stmt->rowCount();
 
 
 
-                        $total_page = ceil($total_num_notice/$num_per_page);
+                        $total_page = ceil($num_published_notice/$num_per_page);
                 ?>
                         
                 <div class="pagination-wrapper">

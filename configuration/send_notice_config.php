@@ -85,4 +85,7 @@
 
 
 
+    } else {
+        header("Location: ../admin/notice.php");
+        exit();
     }
