@@ -131,6 +131,14 @@ header {
   color: #000;
   padding: 20px;
 }
+.formMessages{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  border-radius: 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+}
 .formHeader {
   font-size: 30px;
   margin: 10px 0px;

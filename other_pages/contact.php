@@ -96,7 +96,10 @@
                     </div>
                 </section>
                 <section class="contactFormSection">
-                    <form action="" method="post" class="contactusForm">
+                    <form action="../functions/contactUs.php" method="post" class="contactusForm" id="form-section">
+                        <?php if (isset($_GET['error'])) { ?>
+                            <h4 class="formMessages"><?php echo $_GET['error']; ?></h4>
+                        <?php } ?>
                         <h2 class="formHeader">Contact Us</h2>
                         <div class="inputField">
                             <label for="name">Name: </label>
