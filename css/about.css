@@ -3,6 +3,7 @@
 }
 body {
   overflow-x: hidden;
+  position: relative;
 }
 /* header */
 header {
@@ -273,7 +274,7 @@ header {
 .positiveMessage .bar,
 .pBar {
   width: 100px;
-  height: 10px;
+  height: 5px;
   background-color: gold;
 }
 
@@ -321,6 +322,19 @@ header {
   display: none;
 }
 
+.messageOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.5;
+  display: none;
+}
+
 .closeCalling {
   position: absolute;
   top: 20px;
@@ -364,226 +378,155 @@ header {
 }
 
 /* hall management  */
-
-.srcHallManagement,
-.srcHallJCRCManagement {
+.srcHallManagement {
   width: 100%;
-  background-color: #fff;
-  padding-top: 50px;
+  padding: 20px;
+  background-color: #f4f4f4f4;
+  opacity: 0.9;
+}
+.hallWrapper {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.pHeader {
+  width: 100%;
+  color: var(--primary-color);
+  margin: 10px 0px;
+  text-transform: capitalize;
+  font-size: 35px;
+  text-align: left;
+}
+.otherCategoryHeader {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  padding: 10px 0px;
+  padding-top: 30px;
+  display: inline-block;
+}
+.hallManagementCardsContainer {
+  width: 100%;
+  margin-bottom: 30px;
   overflow: hidden;
 }
-.srcHallManagement .wrapper,
-.srcHallJCRCManagement .wrapper,
-.pagesContainer .wrapper {
-  max-width: 1250px;
-  margin: auto;
-}
-.hallManagementHeader,
-.JCRCManagementHeader {
-  margin: 20px 0px;
-  margin-bottom: 50px;
-}
-.srcHallManagementCardsConatainer {
+.leader {
   width: 100%;
-}
-.srcHallManagementCardsConatainer a {
-  width: 300px;
-  height: 400px;
-  color: rgb(88, 76, 2);
-}
-.srcHallManagementCardsConatainer .leader,
-.srcHallManagementCardsConatainer .leaders {
-  width: 100%;
-  margin: 20px 0px;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.hMcard {
-  width: 300px;
-  height: 400px;
-  margin: 20px 0px;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  margin: 10px 0px;
   display: flex;
   gap: 20px;
-  flex-direction: column;
   align-items: center;
 }
-.cardImageContainer {
+.others {
   width: 100%;
-  height: 280px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
   align-items: center;
-  overflow: hidden;
+  margin-bottom: 50px;
 }
-
-.cardImage {
-  height: 100%;
-  transition: all 0.3s ease;
-}
-.cardImage:hover {
-  scale: 1.1;
-  background-color: #eeebeb;
-}
-.acronym {
-  width: 100%;
-  height: 100%;
-  font-size: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--primary-color);
-  transition: 0.3s ease;
-}
-.acronym:hover {
-  background-color: #eeebeb;
-}
-.cardTxt {
-  height: 120px;
+/* cards */
+.hMcard {
+  width: 280px;
+  height: 350px;
   padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 2px 1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px 1px, rgba(0, 0, 0, 0.3) 0px 1px 3px 1px;
+    overflow: hidden;
 }
-.cardTxt:hover {
-  color: var(--primary-color);
-}
-.name {
-  width: 100%;
-  margin-top: -10px;
-  font-size: 22px;
-  text-align: center;
-}
-
-.otherCategory {
-  margin-top: 50px;
-}
-
-.staff {
-  width: 100%;
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-/* jcrc */
-.srcHallManagementCardsConatainer .leaders {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-}
-
-/* alumni */
-.alumniContainehiddenr {
-  width: 100%;
-}
-.alumniContainer .wrapper {
-  max-width: 1250px;
-  margin: auto;
-}
-
-.alumnis {
-  width: 100%;
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  /* border: 3px solid; */
-}
-
-.alumni {
-  width: 300px;
-  height: 320px;
-  margin: 20px 0px;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-  display: flex;
-  gap: 20px;
-  flex-direction: column;
-  align-items: center;
-  text-transform: uppercase;
-}
-
-.alumni div {
+.cardImageContainer {
   width: 100%;
   height: 250px;
   display: flex;
+  align-items: flex-start;
   justify-content: center;
-  align-items: center;
   overflow: hidden;
 }
-
-.alumni img {
+.cardImage {
+  margin-top: -30px;
+  transition: all 0.3s ease;
+}
+.cardImage:hover {
+  scale: 1.2;
+}
+.acronym{
+  width: 100%;
   height: 100%;
-  transition: all 0.3s ease;
-}
-.alumni img:hover {
-  scale: 1.1;
-  background-color: #eeebeb;
-}
-
-.alumni figcaption {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 22px;
-  align-items: center;
-  text-align: center;
-  transition: all 0.3s ease;
-}
-
-/* page nav section */
-.pagesContainer {
-  width: 100%;
-  padding: 20px 0px;
-  background-color: whitesmoke;
-}
-.pBar {
-  width: 100px;
-  height: 5px;
-}
-.pageSectionHeader {
-  font-size: 35px;
-  text-transform: capitalize;
-  font-weight: 1000;
-  color: #000;
-}
-
-.pageCards {
-  width: 100%;
-  margin: 10px 0px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-}
-
-.card {
-  width: 200px;
-  height: 100px;
-  background-color: #e7e5e5;
-  border: 5px solid var(--primary-color);
+  font-size: 110px;
   color: var(--primary-color);
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: 800;
-  transition: 0.3s ease;
+  align-items:center;
+  transition: all .3s ease;
 }
-.card:hover {
-  color: #fff;
+.acronym:hover{
+  font-size: 120px;
 }
+
+
+.cardTxt {
+  width: 100%;
+  height: 100px;
+  line-height: 1.5rem;
+  border-top: 5px solid var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+  color: #000;
+}
+.cardTxt .name {
+  font-size: 23px;
+  text-transform: capitalize;
+}
+
+/*  */
+/* Alumni */
+.alumniContainer{
+  width: 100%;
+  margin: 30px 0px;
+  padding-bottom: 100px;
+  padding: 30px 0px;
+}
+.alumniContainer .wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+.alumniHeader{
+  width: 100%;
+  text-align: left;
+}
+
+.alumniCardsContainer{
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.alumni{
+  height: 250px;
+}
+
+.alumni .cardImageContainer{
+  height: 180px;
+  overflow: hidden;
+}
+.alumni .cardImageContainer .cardImage{
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+}
+.alumni .cardTxt{
+  height: 50px;
+}
+
+
+
 
 /* hide elements */
 .hideElement {
@@ -597,28 +540,38 @@ header {
 }
 
 /* Media Queries */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1210px) {
+  .srcHallManagement{
+    padding: 10px;
+  }
+  .hallWrapper{
+    width: 100%;
+  }
+  .others{
+    justify-content: center;
+  }
+
+  /*  */
+  .alumniContainer .wrapper {
+    max-width: 100%;
+    padding: 0;
+  }
+  .alumniCardsContainer{
+    gap: 5px;
+    justify-content: center;
+  }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 900px) {
   .wrapper {
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 10px;
   }
-  .srcHallManagement .wrapper,
-  .srcHallJCRCManagement .wrapper,
-  .pagesContainer .wrapper {
-    max-width: 100%;
-    margin: auto;
-    padding: 10px;
+  .uccsrcHeader{
+    font-size: 40px;
   }
 
-  .uccsrcHeader {
-    font-size: 30px;
-    margin: 15px 0px;
-    text-transform: uppercase;
-  }
   .littleBar {
     height: 5px;
     margin-top: 10px;
@@ -682,37 +635,13 @@ header {
     box-shadow: none;
   }
 
-  /*  */
-  /* pages bar */
-  .pBar {
-    height: 4px;
-  }
-  .pageCards {
-    gap: 8px;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  .card {
-    width: 150px;
-    height: 80px;
-    color: var(--primary-color);
-  }
-
-  .alumniHeader {
-    text-align: center;
-  }
-
-  /* .alumni {
-    width: 270px;
-    height: 160px;
-    border: none;
-    font-size: 16px;
-    text-align: center;
-    border: 5px solid #ccc;
-  } */
 }
 
 @media screen and (max-width: 768px) {
+  .wrapper{
+    padding: 0;
+    margin: 0;
+  }
   .toggleDisplayMissionBtnClass {
     width: 150px;
     margin: 20px auto;
@@ -743,51 +672,44 @@ header {
     width: 90%;
     box-shadow: 0px 2px 3px 3px #ccc;
   }
-  /* pages cards */
-  .pageCards {
-    gap: 8px;
-    justify-content: flex-start;
-  }
 
-  /* alumni */
-  /* .alumnis {
-    justify-content: center;
-    align-items: center;
+  /* hall management */
+  .srcHallManagement{
+    padding: 5px;
   }
-  .alumni {
-    width: 80%;
-  } */
-}
-
-@media screen and (max-width: 630px) {
- 
-.staff{
-  justify-content: center;
-}
-  .hMcard,
-  .alumni{
-    width: 280px;
-    height: 380px;
-    overflow: hidden;
+  .leader,
+  .others{
+    gap: 5px;
+  }
+  .hMcard {
+    width: 170px;
+    height: 270px;
+  }
+  .cardImageContainer{
+    height: 170px;
+  }
+  .cardImage{
+    margin-top: 0;
   }
   .acronym{
-    width: 100%;
-    height: 100%;
+    height: 170px;
+    font-size: 80px;
   }
-  .name{
-    font-size: 20px;
+  .cardTxt .name{
+    font-size: 18px;
+  }
+  .cardTxt p{
+    font-size: 10px;
   }
 
-  /* alumni */
-  .alumnis{
-    justify-content: center;
+
+  /*  */
+  .alumniContainer .pBar,
+  .alumniContainer .header{
+    margin: 0px 20px;
   }
   .alumni{
-    height: 340px;
+    height: 170px;
   }
 
-  /* related pages */
-  .pagesContainer{
-    padding-left: 20px;
-  }
 }

@@ -36,14 +36,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const positiveMessageBtn = document.querySelector(".positiveMessageBtn");
   const messageCard = document.querySelector(".message");
   const closeCallingBtn = document.querySelector('.closeCalling');
+  const messageOverlay = document.querySelector('.messageOverlay');
 
 
   positiveMessageBtn.addEventListener('click', () =>{
     messageCard.classList.add('displaymessage');
+    messageOverlay.classList.add('displaymessage');
   });
 
 closeCallingBtn.onclick = () =>{
+  messageOverlay.classList.remove('displaymessage');
   messageCard.classList.remove('displaymessage');
+}
+messageOverlay.onclick = () =>{
+  messageCard.classList.remove('displaymessage');
+  messageOverlay.classList.remove('displaymessage');
 }
 
 

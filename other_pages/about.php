@@ -173,6 +173,7 @@
 
     <!-- cross the calling message -->
     <section class="message">
+
         <div class="closeCalling">
             <i class="fa fa-close"></i>
         </div>
@@ -217,6 +218,7 @@
 
 
 
+    <div class="messageOverlay">Hello</div>
     <!--  cross and our calling (positive message) -->
     <section class="positiveMessage">
         <div class="wrapper">
@@ -231,454 +233,392 @@
 
     <!-- src hall management -->
     <section class="srcHallManagement">
-        <div class="wrapper">
+        <div class="hallWrapper">
 
+            <!--  -->
             <div class="pBar"></div>
-            <h1 class="header hallManagementHeader">
-                SRC Hall Management
-            </h1>
-            <div class="srcHallManagementCardsConatainer">
-                <div class="leader">
-                    <a href="#">
-                        <div class="hMcard">
-                            <div class="cardImageContainer">
-                                <img src="../media/pictures/people/hallmanagement/36481-034a3751.jpg" alt="SRC Hall Master" class="cardImage">
-                            </div>
-                            <div class="cardTxt">
-                                <h2 class="name">Prof. Charles Adabo Oppong</h2>
-                                <p class="title">Hall master / Warden</p>
-                            </div>
+            <h1 class="pHeader">SRC Hall Management</h1>
+
+            <!--  -->
+            <div class="hallManagementCardsContainer">
+                <div class="leader hallWarden">
+                    <div class="hMcard">
+                        <div class="cardImageContainer">
+                            <img src="../media/pictures/people/hallmanagement/36481-034a3751.jpg" alt="SRC Hall Master" class="cardImage">
                         </div>
-                    </a>
+                        <div class="cardTxt">
+                            <h2 class="name">Prof. Charles Adabo Oppong</h2>
+                            <p class="title">Hall master / Warden</p>
+                            <p>coppong@ucc.edu.gh</p>
+                        </div>
+                    </div>
                 </div>
-                <h2 class="otherCategory">Staff</h2>
-                <div class="staff">
-                    <div class="hMcard">
-                        <a href="#">
-                            <div class="cardImageContainer">
-                                <img src="../media/pictures/people/hallmanagement/charityabraham" alt="Asistant Registrar" class="cardImage">
-                            </div>
-                            <div class="cardTxt">
-                                <h2 class="name">Mrs. Charity Abraham</h2>
-                                <p class="title">Asistant Registrar</p>
-                            </div>
-                        </a>
-                    </div>
 
+                <h2 class="otherCategoryHeader">Staff</h2>
 
+                <div class="others staff">
                     <div class="hMcard">
-                        <a href="#">
-                            <div class="cardImageContainer">
-                                <h1 class="acronym">UE</h1>
-                            </div>
-                            <div class="cardTxt">
-                                <h2 class="name">Mr. Urel Ewusi</h2>
-                                <p class="title">Principal Hall Assistant</p>
-                            </div>
-                        </a>
+                        <div class="cardImageContainer">
+                            <img src="../media/pictures/people/hallmanagement/charityabraham" alt="Asistant Registrar" class="cardImage">
+                        </div>
+                        <div class="cardTxt">
+                            <h2 class="name">Mrs. Charity Abraham</h2>
+                            <p class="title">Asistant Registrar</p>
+                            <p>charity.abraham@ucc.edu.gh</p>
+                        </div>
                     </div>
 
                     <div class="hMcard">
-                        <a href="#">
-                            <div class="cardImageContainer">
-                                <img src="../media/pictures/people/hallmanagement/thelma" alt="Principal Technician" class="cardImage">
-                            </div>
-                            <div class="cardTxt">
-                                <h2 class="name">Miss. Thelma Nana Dasoberi</h2>
-                                <p class="title">Principal Technician</p>
-                            </div>
-                        </a>
+                        <div class="cardImageContainer">
+                            <h1 class="acronym">UE</h1>
+                        </div>
+                        <div class="cardTxt">
+                            <h2 class="name">Mr. Urel Ewusi</h2>
+                            <p class="title">Principal Hall Assistant</p>
+                            <p>urel.ewusi@ucc.edu.gh</p>
+                        </div>
                     </div>
 
                     <div class="hMcard">
-                        <a href="#">
-                            <div class="cardImageContainer">
-                                <h1 class="acronym">AKB</h1>
-                            </div>
-                            <div class="cardTxt">
-                                <h2 class="name">Mr. Albert K Baidoo</h2>
-                                <p class="title">Senior Administrative Assistant</p>
-                            </div>
-                        </a>
+                        <div class="cardImageContainer">
+                            <img src="../media/pictures/people/hallmanagement/thelma" alt="Principal Technician" class="cardImage">
+                        </div>
+                        <div class="cardTxt">
+                            <h2 class="name">Miss. Thelma N Dasoberi</h2>
+                            <p class="title">Principal Technician</p>
+                            <p>thelma.dasoberi@ucc.edu.gh</p>
+                        </div>
                     </div>
 
                     <div class="hMcard">
-                        <a href="#">
-                            <div class="cardImageContainer">
-                                <h1 class="acronym">NAK</h1>
-                            </div>
-                            <div class="cardTxt">
-                                <h2 class="name">Mrs. Nana Ama Anhwere-Kuffour</h2>
-                                <p class="title">Senior Hall Asistant</p>
-                            </div>
-                        </a>
-                    </div>
-
-
-                    <div class="hMcard">
-                        <a href="#">
-                            <div class="cardImageContainer">
-                                <h1 class="acronym">HO</h1>
-                            </div>
-                            <div class="cardTxt">
-                                <h2 class="name">Mr. Henry Ofori</h2>
-                                <p class="title">Accounting Assistant</p>
-                            </div>
-                        </a>
+                        <div class="cardImageContainer">
+                            <h1 class="acronym">AKB</h1>
+                        </div>
+                        <div class="cardTxt">
+                            <h2 class="name">Mr. Albert K Baidoo</h2>
+                            <p class="title">Senior Administrative Assistant</p>
+                            <p>albert.baidoo@ucc.edu.gh</p>
+                        </div>
                     </div>
 
                     <div class="hMcard">
-                        <a href="#">
-                            <div class="cardImageContainer">
-                                <h1 class="acronym">EY</h1>
-                            </div>
-                            <div class="cardTxt">
-                                <h2 class="name">Miss. Ellen Yeboah</h2>
-                                <p class="title">Administrative Assistant</p>
-                            </div>
-                        </a>
+                        <div class="cardImageContainer">
+                            <h1 class="acronym">NAK</h1>
+                        </div>
+                        <div class="cardTxt">
+                            <h2 class="name">Mrs. N A Anhwere-Kuffour</h2>
+                            <p class="title">Senior Hall Asistant</p>
+                            <p>patricia.quainoo@ucc.edu.gh</p>
+                        </div>
                     </div>
 
                     <div class="hMcard">
-                        <a href="#">
-                            <div class="cardImageContainer">
-                                <h1 class="acronym">KVD</h1>
-                            </div>
-                            <div class="cardTxt">
-                                <h2 class="name">Mr. Kennedy V. K. Dogbatsey</h2>
-                                <p class="title">Hall Asistant</p>
-                            </div>
-                        </a>
+                        <div class="cardImageContainer">
+                            <h1 class="acronym">HO</h1>
+                        </div>
+                        <div class="cardTxt">
+                            <h2 class="name">Mr. Henry Ofori</h2>
+                            <p class="title">Accounting Assistant</p>
+                            <p>henry.ofori@ucc.edu.gh</p>
+                        </div>
                     </div>
 
                     <div class="hMcard">
-                        <a href="#">
-                            <div class="cardImageContainer">
-                                <h1 class="acronym">JE</h1>
-                            </div>
-                            <div class="cardTxt">
-                                <h2 class="name">Mr. Jonathan Esuong</h2>
-                                <p class="title">Hall Asistant</p>
-                            </div>
-                        </a>
+                        <div class="cardImageContainer">
+                            <h1 class="acronym">EY</h1>
+                        </div>
+                        <div class="cardTxt">
+                            <h2 class="name">Miss. Ellen Yeboah</h2>
+                            <p class="title">Administrative Assistant</p>
+                            <p>ellen.yeboah@ucc.edu.gh</p>
+                        </div>
                     </div>
 
                     <div class="hMcard">
-                        <a href="#">
-                            <div class="cardImageContainer">
-                                <h1 class="acronym">VA</h1>
-                            </div>
-                            <div class="cardTxt">
-                                <h2 class="name">Mr. Vincent Ansah</h2>
-                                <p class="title">Hall Asistant</p>
-                            </div>
-                        </a>
+                        <div class="cardImageContainer">
+                            <h1 class="acronym">KVD</h1>
+                        </div>
+                        <div class="cardTxt">
+                            <h2 class="name">Mr. Kennedy V. K. Dogbatsey</h2>
+                            <p class="title">Hall Asistant</p>
+                            <p></p>
+                        </div>
                     </div>
 
                     <div class="hMcard">
-                        <a href="#">
-                            <div class="cardImageContainer">
-                                <h1 class="acronym">CB</h1>
-                            </div>
-                            <div class="cardTxt">
-                                <h2 class="name">Miss. Comfort Baidoo</h2>
-                                <p class="title">Hall Asistant</p>
-                            </div>
-                        </a>
+                        <div class="cardImageContainer">
+                            <h1 class="acronym">JE</h1>
+                        </div>
+                        <div class="cardTxt">
+                            <h2 class="name">Mr. Jonathan Esuong</h2>
+                            <p class="title">Hall Asistant</p>
+                        </div>
                     </div>
 
                     <div class="hMcard">
-                        <a href="#">
-                            <div class="cardImageContainer">
-                                <h1 class="acronym">ET</h1>
-                            </div>
-                            <div class="cardTxt">
-                                <h2 class="name">Miss. Elizabeth Taylor</h2>
-                                <p class="title">Hall Asistant</p>
-                            </div>
-                        </a>
+                        <div class="cardImageContainer">
+                            <h1 class="acronym">VA</h1>
+                        </div>
+                        <div class="cardTxt">
+                            <h2 class="name">Mr. Vincent Ansah</h2>
+                            <p class="title">Hall Asistant</p>
+                        </div>
+                    </div>
+
+                    <div class="hMcard">
+                        <div class="cardImageContainer">
+                            <h1 class="acronym">CB</h1>
+                        </div>
+                        <div class="cardTxt">
+                            <h2 class="name">Miss. Comfort Baidoo</h2>
+                            <p class="title">Hall Asistant</p>
+                        </div>
+                    </div>
+
+                    <div class="hMcard">
+                        <div class="cardImageContainer">
+                            <h1 class="acronym">ET</h1>
+                        </div>
+                        <div class="cardTxt">
+                            <h2 class="name">Miss. Elizabeth Taylor</h2>
+                            <p class="title">Hall Asistant</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-
-
-
-    <!-- src hall management -->
-    <section class="srcHallJCRCManagement">
-        <div class="wrapper">
-
+            <!-- jcrc leadership section -->
             <div class="pBar"></div>
-            <h1 class="header JCRCManagementHeader">
-                SRC Hall JCRC leadership
-            </h1>
-            <div class="srcHallManagementCardsConatainer">
-                <div class="leaders">
+            <h1 class="pHeader">JCRC Leaders</h1>
+
+            <div class="hallManagementCardsContainer">
+                <div class="leader hallWarden">
                     <div class="hMcard">
-                        <a href="#">
-                            <div class="cardImageContainer">
-                                <img src="../media/pictures/people/hallmanagement/36481-034a3751.jpg" alt="SRC Hall Master" class="cardImage">
-                            </div>
-                            <div class="cardTxt">
-                                <h2 class="name">Prof. Charles Adabo Oppong</h2>
-                                <p class="title">Hall master / Warden</p>
-                            </div>
-                        </a>
+                        <div class="cardImageContainer">
+                            <img src="../media/pictures/people/hallmanagement/36481-034a3751.jpg" alt="SRC Hall Master" class="cardImage">
+                        </div>
+                        <div class="cardTxt">
+                            <h2 class="name">Prof. Charles Adabo Oppong</h2>
+                            <p class="title">Hall master / Warden</p>
+                            <p>coppong@ucc.edu.gh</p>
+                        </div>
                     </div>
-                    
+
                     <div class="hMcard">
-                        <a href="#">
-                            <div class="cardImageContainer">
-                                <img src="../media/pictures/people/hallmanagement/36481-034a3751.jpg" alt="SRC Hall Master" class="cardImage">
-                            </div>
-                            <div class="cardTxt">
-                                <h2 class="name">Prof. Charles Adabo Oppong</h2>
-                                <p class="title">Hall master / Warden</p>
-                            </div>
-                        </a>
+                        <div class="cardImageContainer">
+                            <img src="../media/pictures/people/hallmanagement/36481-034a3751.jpg" alt="SRC Hall Master" class="cardImage">
+                        </div>
+                        <div class="cardTxt">
+                            <h2 class="name">Prof. Charles Adabo Oppong</h2>
+                            <p class="title">Hall master / Warden</p>
+                            <p>coppong@ucc.edu.gh</p>
+                        </div>
                     </div>
                 </div>
-                <h2 class="otherCategory">Other Leaders</h2>
-                <div class="staff">
-                    <div class="hMcard">
-                        <a href="#">
-                            <div class="cardImageContainer">
-                                <img src="../media/pictures/people/hallmanagement/charityabraham" alt="Asistant Registrar" class="cardImage">
-                            </div>
-                            <div class="cardTxt">
-                                <h2 class="name">Mrs. Charity Abraham</h2>
-                                <p class="title">Asistant Registrar</p>
-                            </div>
-                        </a>
-                    </div>
 
+                <h2 class="otherCategoryHeader">Others</h2>
 
+                <div class="others staff">
                     <div class="hMcard">
-                        <a href="#">
-                            <div class="cardImageContainer">
-                                <h1 class="acronym">UE</h1>
-                            </div>
-                            <div class="cardTxt">
-                                <h2 class="name">Mr. Urel Ewusi</h2>
-                                <p class="title">Principal Hall Assistant</p>
-                            </div>
-                        </a>
+                        <div class="cardImageContainer">
+                            <img src="../media/pictures/people/hallmanagement/charityabraham" alt="Asistant Registrar" class="cardImage">
+                        </div>
+                        <div class="cardTxt">
+                            <h2 class="name">Mrs. Charity Abraham</h2>
+                            <p class="title">Asistant Registrar</p>
+                            <p>charity.abraham@ucc.edu.gh</p>
+                        </div>
                     </div>
 
                     <div class="hMcard">
-                        <a href="#">
-                            <div class="cardImageContainer">
-                                <img src="../media/pictures/people/hallmanagement/thelma" alt="Principal Technician" class="cardImage">
-                            </div>
-                            <div class="cardTxt">
-                                <h2 class="name">Miss. Thelma Nana Dasoberi</h2>
-                                <p class="title">Principal Technician</p>
-                            </div>
-                        </a>
+                        <div class="cardImageContainer">
+                            <h1 class="acronym">UE</h1>
+                        </div>
+                        <div class="cardTxt">
+                            <h2 class="name">Mr. Urel Ewusi</h2>
+                            <p class="title">Principal Hall Assistant</p>
+                            <p>urel.ewusi@ucc.edu.gh</p>
+                        </div>
                     </div>
 
                     <div class="hMcard">
-                        <a href="#">
-                            <div class="cardImageContainer">
-                                <h1 class="acronym">AKB</h1>
-                            </div>
-                            <div class="cardTxt">
-                                <h2 class="name">Mr. Albert K Baidoo</h2>
-                                <p class="title">Senior Administrative Assistant</p>
-                            </div>
-                        </a>
+                        <div class="cardImageContainer">
+                            <img src="../media/pictures/people/hallmanagement/thelma" alt="Principal Technician" class="cardImage">
+                        </div>
+                        <div class="cardTxt">
+                            <h2 class="name">Miss. Thelma N Dasoberi</h2>
+                            <p class="title">Principal Technician</p>
+                            <p>thelma.dasoberi@ucc.edu.gh</p>
+                        </div>
                     </div>
 
                     <div class="hMcard">
-                        <a href="#">
-                            <div class="cardImageContainer">
-                                <h1 class="acronym">NAK</h1>
-                            </div>
-                            <div class="cardTxt">
-                                <h2 class="name">Mrs. Nana Ama Anhwere-Kuffour</h2>
-                                <p class="title">Senior Hall Asistant</p>
-                            </div>
-                        </a>
-                    </div>
-
-
-                    <div class="hMcard">
-                        <a href="#">
-                            <div class="cardImageContainer">
-                                <h1 class="acronym">HO</h1>
-                            </div>
-                            <div class="cardTxt">
-                                <h2 class="name">Mr. Henry Ofori</h2>
-                                <p class="title">Accounting Assistant</p>
-                            </div>
-                        </a>
+                        <div class="cardImageContainer">
+                            <h1 class="acronym">AKB</h1>
+                        </div>
+                        <div class="cardTxt">
+                            <h2 class="name">Mr. Albert K Baidoo</h2>
+                            <p class="title">Senior Administrative Assistant</p>
+                            <p>albert.baidoo@ucc.edu.gh</p>
+                        </div>
                     </div>
 
                     <div class="hMcard">
-                        <a href="#">
-                            <div class="cardImageContainer">
-                                <h1 class="acronym">EY</h1>
-                            </div>
-                            <div class="cardTxt">
-                                <h2 class="name">Miss. Ellen Yeboah</h2>
-                                <p class="title">Administrative Assistant</p>
-                            </div>
-                        </a>
+                        <div class="cardImageContainer">
+                            <h1 class="acronym">NAK</h1>
+                        </div>
+                        <div class="cardTxt">
+                            <h2 class="name">Mrs. N A Anhwere-Kuffour</h2>
+                            <p class="title">Senior Hall Asistant</p>
+                            <p>patricia.quainoo@ucc.edu.gh</p>
+                        </div>
                     </div>
 
                     <div class="hMcard">
-                        <a href="#">
-                            <div class="cardImageContainer">
-                                <h1 class="acronym">KVD</h1>
-                            </div>
-                            <div class="cardTxt">
-                                <h2 class="name">Mr. Kennedy V. K. Dogbatsey</h2>
-                                <p class="title">Hall Asistant</p>
-                            </div>
-                        </a>
+                        <div class="cardImageContainer">
+                            <h1 class="acronym">HO</h1>
+                        </div>
+                        <div class="cardTxt">
+                            <h2 class="name">Mr. Henry Ofori</h2>
+                            <p class="title">Accounting Assistant</p>
+                            <p>henry.ofori@ucc.edu.gh</p>
+                        </div>
                     </div>
 
                     <div class="hMcard">
-                        <a href="#">
-                            <div class="cardImageContainer">
-                                <h1 class="acronym">JE</h1>
-                            </div>
-                            <div class="cardTxt">
-                                <h2 class="name">Mr. Jonathan Esuong</h2>
-                                <p class="title">Hall Asistant</p>
-                            </div>
-                        </a>
+                        <div class="cardImageContainer">
+                            <h1 class="acronym">EY</h1>
+                        </div>
+                        <div class="cardTxt">
+                            <h2 class="name">Miss. Ellen Yeboah</h2>
+                            <p class="title">Administrative Assistant</p>
+                            <p>ellen.yeboah@ucc.edu.gh</p>
+                        </div>
                     </div>
 
                     <div class="hMcard">
-                        <a href="#">
-                            <div class="cardImageContainer">
-                                <h1 class="acronym">VA</h1>
-                            </div>
-                            <div class="cardTxt">
-                                <h2 class="name">Mr. Vincent Ansah</h2>
-                                <p class="title">Hall Asistant</p>
-                            </div>
-                        </a>
+                        <div class="cardImageContainer">
+                            <h1 class="acronym">KVD</h1>
+                        </div>
+                        <div class="cardTxt">
+                            <h2 class="name">Mr. Kennedy V. K. Dogbatsey</h2>
+                            <p class="title">Hall Asistant</p>
+                            <p></p>
+                        </div>
                     </div>
 
                     <div class="hMcard">
-                        <a href="#">
-                            <div class="cardImageContainer">
-                                <h1 class="acronym">CB</h1>
-                            </div>
-                            <div class="cardTxt">
-                                <h2 class="name">Miss. Comfort Baidoo</h2>
-                                <p class="title">Hall Asistant</p>
-                            </div>
-                        </a>
+                        <div class="cardImageContainer">
+                            <h1 class="acronym">JE</h1>
+                        </div>
+                        <div class="cardTxt">
+                            <h2 class="name">Mr. Jonathan Esuong</h2>
+                            <p class="title">Hall Asistant</p>
+                        </div>
                     </div>
 
                     <div class="hMcard">
-                        <a href="#">
-                            <div class="cardImageContainer">
-                                <h1 class="acronym">ET</h1>
-                            </div>
-                            <div class="cardTxt">
-                                <h2 class="name">Miss. Elizabeth Taylor</h2>
-                                <p class="title">Hall Asistant</p>
-                            </div>
-                        </a>
+                        <div class="cardImageContainer">
+                            <h1 class="acronym">VA</h1>
+                        </div>
+                        <div class="cardTxt">
+                            <h2 class="name">Mr. Vincent Ansah</h2>
+                            <p class="title">Hall Asistant</p>
+                        </div>
+                    </div>
+
+                    <div class="hMcard">
+                        <div class="cardImageContainer">
+                            <h1 class="acronym">CB</h1>
+                        </div>
+                        <div class="cardTxt">
+                            <h2 class="name">Miss. Comfort Baidoo</h2>
+                            <p class="title">Hall Asistant</p>
+                        </div>
+                    </div>
+
+                    <div class="hMcard">
+                        <div class="cardImageContainer">
+                            <h1 class="acronym">ET</h1>
+                        </div>
+                        <div class="cardTxt">
+                            <h2 class="name">Miss. Elizabeth Taylor</h2>
+                            <p class="title">Hall Asistant</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
-
-
-
 
 
     <!-- hall alumni -->
-    <section class="alumniContainer pagesContainer">
+    <section class="alumniContainer srcHallManagement">
         <div class="wrapper">
             <div class="pBar"></div>
-            <h3 class="pageSectionHeader alumniHeader">notable alumni over the years</h3>
+            <h3 class="pHeader ">notable alumni</h3>
 
             <!-- page cards -->
-            <ul class="alumnis">
-                <li class="alumni">
-                    <figure>
-                        <div>
-                            <img src="../media/pictures/people/36481-034a3751.jpg" alt="">
-                        </div>
-                        <figcaption>Hon. Kwesi Quartey</figcaption>
-                    </figure>
-                </li>
+            <div class="alumniCardsContainer">
+                <div class="hMcard alumni">
+                    <div class="cardImageContainer">
+                        <img src="../media/pictures/people/36481-034a3751.jpg" alt="" class="cardImage">
+                    </div>
+                    <div class="cardTxt">
+                        <h2 class="name">Hon. Kwesi Quartey</h2>
+                    </div>
+                </div>
 
-                <li class="alumni">
-                    <figure>
-                        <div>
-                            <img src="../media/pictures/people/GIJ.jpg" alt="">
-                        </div>
-                        <figcaption>Prof. George Kwaku Opoku</figcaption>
-                    </figure>
-                </li>
+                <div class="hMcard alumni">
+                    <div class="cardImageContainer">
+                        <img src="../media/pictures/people/GIJ.jpg" alt="" class="cardImage">
+                    </div>
+                    <div class="cardTxt">
+                        <h2 class="name">Prof. George Kwaku Opoku</h2>
+                    </div>
+                </div>
 
-                <li class="alumni">
-                    <figure>
-                        <div>
-                            <img src="../media/pictures/people/36481-034a3751.jpg" alt="">
-                        </div>
-                        <figcaption>Hon. Kwesi Quartey</figcaption>
-                    </figure>
-                </li>
+                <div class="hMcard alumni">
+                    <div class="cardImageContainer">
+                        <img src="../media/pictures/people/36481-034a3751.jpg" alt="" class="cardImage">
+                    </div>
+                    <div class="cardTxt">
+                        <h2 class="name">Hon. Kwesi Quartey</h2>
+                    </div>
+                </div>
 
-                <li class="alumni">
-                    <figure>
-                        <div>
-                            <img src="../media/pictures/people/GIJ.jpg" alt="">
-                        </div>
-                        <figcaption>Prof. George Kwaku Opoku</figcaption>
-                    </figure>
-                </li>
+                <div class="hMcard alumni">
+                    <div class="cardImageContainer">
+                        <img src="../media/pictures/people/GIJ.jpg" alt="" class="cardImage">
+                    </div>
+                    <div class="cardTxt">
+                        <h2 class="name">Prof. George Kwaku Opoku</h2>
+                    </div>
+                </div>
 
-                <li class="alumni">
-                    <figure>
-                        <div>
-                            <img src="../media/pictures/people/36481-034a3751.jpg" alt="">
-                        </div>
-                        <figcaption>Hon. Kwesi Quartey</figcaption>
-                    </figure>
-                </li>
+                <div class="hMcard alumni">
+                    <div class="cardImageContainer">
+                        <img src="../media/pictures/people/36481-034a3751.jpg" alt="" class="cardImage">
+                    </div>
+                    <div class="cardTxt">
+                        <h2 class="name">Hon. Kwesi Quartey</h2>
+                    </div>
+                </div>
 
-                <li class="alumni">
-                    <figure>
-                        <div>
-                            <img src="../media/pictures/people/GIJ.jpg" alt="">
-                        </div>
-                        <figcaption>Prof. George Kwaku Opoku</figcaption>
-                    </figure>
-                </li>
-            </ul>
-        </div>
-    </section>
+                <div class="hMcard alumni">
+                    <div class="cardImageContainer">
+                        <img src="../media/pictures/people/GIJ.jpg" alt="" class="cardImage">
+                    </div>
+                    <div class="cardTxt">
+                        <h2 class="name">Prof. George Kwaku Opoku</h2>
+                    </div>
+                </div>
 
-
-    <!-- related pages -->
-
-    <section class="pagesContainer">
-        <div class="wrapper">
-            <div class="pBar"></div>
-            <h3 class="pageSectionHeader">Related Pages</h3>
-
-            <!-- page cards -->
-            <div class="pageCards">
-                <a href="#" class="card">Home</a>
-                <a href="#" class="card">News Feed</a>
-                <a href="#" class="card">Events</a>
-                <a href="#" class="card">Gallary</a>
-                <a href="#" class="card">Contact</a>
             </div>
+            <div class="pBar end"></div>
         </div>
     </section>
+
+          
 
 
 
@@ -687,10 +627,10 @@
     <script src="../js/index.js"></script>
 
     <!-- fade elements in on scroll js link -->
-    <script src="../js/fadeElementsIn.js"></script>
+    <script src="../js/fadeElementsIn.js?V=<?= time() ?>;"></script>
 
     <!-- about page js link -->
-    <script src="../js/aboutPage.js"></script>
+    <script src="../js/aboutPage.js?V=<?= time() ?>;"></script>
 
 
 

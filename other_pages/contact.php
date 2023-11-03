@@ -58,7 +58,7 @@
             <div class="overlay"></div>
             <div class="wrapContent">
                 <section class="txtSection">
-                    <h2 class="txtHeader"><span>Let's get </span><br>this started</h2>
+                    <h2 class="txtHeader">Let's get <span>this started</span></h2>
                     <p>We'd love to get to know you and find out what you have in mind. Looking to answer some questions first? Feel free to email us at uccsrc@gmail.com</p>
                     <ul class="socialMediaHandles">
                         <li class="handle">
