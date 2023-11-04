@@ -708,7 +708,12 @@ header {
   .alumniContainer .header{
     margin: 0px 20px;
   }
+  .alumniCardsContainer{
+    padding: 0;
+    margin-bottom: 50px;
+  }
   .alumni{
+    width: 150px;
     height: 170px;
   }
 
