@@ -28,11 +28,16 @@
         <div class="contact-wrapper">
           <h4>CONTACT</h4>
           <ul class>
-            <li><i class="fas fa-phone" ></i> <i class="fab fa-whatsapp" ></i> +233 54 789 6582 </li>
-            <li><a href="#"> <i class = "fab fa-facebook-f"></i> SRC Hall </a></li>
-            <li><a href="#"> <i class = "fab fa-twitter"></i> @srchall_ucc </a></li>
-            <li><a href="#"> <i class = "fab fa-instagram"></i> uccsrchall </a></li>
-            <li><a href="#"> <i class = "fab fa-youtube"></i> Nova Hall TV </a></li>
+            <li> <a href=" https://wa.me/message/SMZPFLHV6SSWB1"> <i class="fas fa-phone" ></i> <i class="fab fa-whatsapp" ></i> +233 54 789 6582 </a></li>
+            <li><a href="https://www.facebook.com"> <i class = "fab fa-facebook-f"></i> SRC Hall </a></li>
+            <li><a href="https://x.com/srchall_ucc?t=X0_8TGA85QkzT1gzFwpq_A&s=09"> <i class = "fab fa-twitter"></i> @srchall_ucc </a></li>
+            <li><a href="https://www.instagram.com/uccsrchall/"> <i class = "fab fa-instagram"></i> uccsrchall </a></li>
+            <li><a href=" https://www.youtube.com/channel/UC-fSU81xzvsAB_u4B4D81QQ"> <i class = "fab fa-youtube"></i> Nova Hall TV </a></li>
+            <li class="">
+                  <p><i class = "fas fa-envelope"></i> uccsrchall@gmail.com</p>
+                  <p>1508-423-5687</p>
+                  <p>32, main street, CC</p>
+            </li>
           </ul>
         </div>
       <!--  -->
@@ -46,10 +51,10 @@
 
       <!-- ---------------------------------- -->
       <div class = "social-links">
-        <a href = "#"><i class = "fab fa-facebook-f"></i></a>
-        <a href = "#"><i class = "fab fa-twitter"></i></a>
-        <a href = "#"><i class = "fab fa-instagram"></i></a>
-        <a href = "#"><i class = "fab fa-youtube"></i></a>
+        <a href = "https://www.facebook.com"><i class = "fab fa-facebook-f"></i></a>
+        <a href = "https://x.com/srchall_ucc?t=X0_8TGA85QkzT1gzFwpq_A&s=09"><i class = "fab fa-twitter"></i></a>
+        <a href = "https://www.instagram.com/uccsrchall/"><i class = "fab fa-instagram"></i></a>
+        <a href = "https://www.youtube.com/channel/UC-fSU81xzvsAB_u4B4D81QQ"><i class = "fab fa-youtube"></i></a>
       </div>
       <span class="copyright-info">UccSrcHall &copy; <span id="copyright-date"></span></span>
       <span class="dev-info">Developed by: BROCODE - 054 545 7857 | 055 846 5569</span>

@@ -310,7 +310,8 @@ input[type="password"] {
 .notice {
 }
 .add-btn,
-.settings-btn {
+.settings-btn,
+.m-btn {
   position: fixed;
   right: 18vw;
   bottom: 10vh;
@@ -323,6 +324,11 @@ input[type="password"] {
   font-weight: bolder;
   transition: all 0.3s ease-in;
   z-index: 20;
+}
+
+.m-btn {
+  bottom: 18vh;
+  z-index: 30;
 }
 
 .add-btn:hover,
@@ -426,25 +432,32 @@ input[type="password"] {
 
 /* create item styling */
 
-.create-item-wrapper {
+.create-item-wrapper,
+.message-wrapper {
   display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 8vh;
+  gap: 10px 0;
+  top: 10vh;
   right: 30%;
   left: 30%;
   padding: 50px;
-  background: #daa520;
+  /* background: #daa520; */
+  background: #daa52050;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 5px #daa52050;
   z-index: 2;
 }
+
 .create-item-wrapper h2 {
   text-align: center;
 }
 .create-item-wrapper .form-item {
   border: none;
   padding: 0px 10px;
+  margin: 10px 0;
 }
 /* .create-item-wrapper .form-item:hover */
 .create-item-wrapper input[type="text"],

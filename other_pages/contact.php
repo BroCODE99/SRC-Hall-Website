@@ -22,8 +22,8 @@
                 <a href="../index.php" class="navbar-brand"><img src="../media/logos/srch1.png" alt="logo"></a>
                 <div class="navbar-nav">
                     <a href="../index.php">home</a>
-                    <a href="news_feed.php">news feed</a>
-                    <a href="events.php">events</a>
+                    <a href="notice.php">Notice</a>
+                    <!-- <a href="events.php">events</a> -->
                     <a href="gallery.php">gallery</a>
                     <a id="active-link" href="contact.php">contact</a>
                     <a href="about.php">about</a>
@@ -39,7 +39,7 @@
         </nav>
         <div class="banner">
             <div class="container">
-                <h1 class="banner-title">CONTACT</h1>
+                <h1 class="banner-title">CONTACT US</h1>
                 <p>...exceeding expectations.</p>
             </div>
         </div>
@@ -96,29 +96,26 @@
                     </div>
                 </section>
                 <section class="contactFormSection">
-                    <form action="../functions/contactUs.php" method="post" class="contactusForm" id="form-section">
+                    <form action="../configuration/contact_us_config.php" method="post" class="contactusForm" id="form-section">
                         <?php if (isset($_GET['error'])) { ?>
-                            <h4 class="formMessages"><?php echo $_GET['error']; ?></h4>
+                            <p class="formMessages"><?= $_GET['error']; ?></p>
+                        <?php } elseif (isset($_GET['success'])) { ?>
+                            <p class="formMessages" > <?= $_GET['success'] ?> </p>
                         <?php } ?>
                         <h2 class="formHeader">Contact Us</h2>
                         <div class="inputField">
-                            <label for="name">Name: </label>
-                            <input type="text" name="name" id="userName">
+                            <label for="">Name:</label>
+                            <input type="text" name="name" id="userName"  autocomplete="off">
                         </div>
                         <div class="inputField">
-                            <label for="email">Email: </label>
-                            <input type="email" name="email" id="userEmail">
+                            <label for="">Email</label>
+                            <input type="email" name="email" id="userEmail"  autocomplete="off" >
                         </div>
                         <label for="message" class="textareaLabel">Message</label>
                         <textarea name="message" id="userMessage" cols="20" rows="5"></textarea>
 
                         <div class="infoAndSubmit">
-                            <div class="address">
-                                <p>uccsrc@gmail.com</p>
-                                <p>1508-423-5687</p>
-                                <p>32, main street, CC</p>
-                            </div>
-                            <input type="submit" value="Submit" name="submitUserMessage">
+                            <input type="submit"  value="SEND" name="send">
                         </div>
                     </form>
                 </section>

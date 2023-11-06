@@ -36,7 +36,7 @@ if (isset($_GET['notice_page'])) {
     $notice_page = 1;
 }
 
-$num_per_page = 6;
+$num_per_page = 12;
 $start_page = ($notice_page - 1) * $num_per_page;
 
 $select_query = "SELECT * FROM notice ORDER BY news_id DESC LIMIT $start_page, $num_per_page;";

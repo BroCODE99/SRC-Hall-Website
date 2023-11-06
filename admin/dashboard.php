@@ -6,7 +6,14 @@
         <i class="fas fa-cog"></i>
     </div>
 
+    <!--  -->
 
+    <div class="m-btn add-btn">
+        <span>52</span>
+         <i class="fas fa-envelope"></i>
+    </div>
+
+<!--  -->
 
            
     <div class="dashboard">
@@ -122,8 +129,6 @@
             </form>
         </div>
         <!--  -->
-        <hr class="line-separator">
-        <hr class="line-separator">
         <!--  -->
         <div class="make-admin-wrapper">
         <form action="../configuration/add_admin_config.php" method="post">
@@ -173,6 +178,15 @@
             </form>
         </div>
         <!--  -->
+
+    </section>
+
+    <!--  -->
+
+    <!-- messages wrapper -->
+    <section class="message-wrapper">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore reiciendis nisi voluptas doloremque natus laboriosam doloribus accusantium maxime, deserunt quibusdam quas cum adipisci accusamus quisquam. Quos facere tempora eum modi!
+            
     </section>
 
                   
@@ -186,7 +200,12 @@
 
 
 
-
+<script>
+    const mBtn = document.querySelector(".m-btn");
+    mBtn.addEventListener("click", () => {
+    messageWrapper.classList.toggle("create-wrapper-active");
+});
+</script>
     <?php
         require_once 'footer.php';
     ?>

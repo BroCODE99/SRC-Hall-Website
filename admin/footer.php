@@ -30,6 +30,12 @@ if (urlParams.get("error")) {
 </script>
 
     
+<script>
+      const dateTime = new Date();
+      const photoYear = document.querySelector("#photo_year");
+      const yearNumber = dateTime.getFullYear();
+      photoYear.value = yearNumber;
+  </script> 
 
 <script src="../js/profile.js"></script>
 <script src="../fontawesome/js/all.js"></script>

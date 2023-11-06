@@ -130,7 +130,7 @@ require_once 'header.php';
                 <!--  -->
                 <div class="form-item">
                     <i class="fas fa-calendar"></i>
-                    <input type="text" name="year" autocomplete="off" placeholder="Year (ex: 2024)">
+                    <input type="text" name="year" id="photo_year" autocomplete="off" placeholder="Year (ex: 2024)">
                 </div>
                 <!--  -->
 

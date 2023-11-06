@@ -9,6 +9,7 @@ const settingsWrapper = document.querySelector(".settings");
 const galleryWrapper = document.querySelector(".gallery");
 
 //
+
 // noticeWrapper.addEventListener("click", () => {
 //   noticeBtn.classList.add("active-btn");
 //   dashboardBtn.classList.remove("active-btn");
@@ -20,10 +21,13 @@ const galleryWrapper = document.querySelector(".gallery");
 //
 const addBtn = document.querySelector(".add-btn");
 const createItemWrapper = document.querySelector(".create-item-wrapper");
+const messageWrapper = document.querySelector(".message-wrapper");
 //
 addBtn.addEventListener("click", () => {
   createItemWrapper.classList.toggle("create-wrapper-active");
 });
+//
+
 //
 
 //
@@ -46,6 +50,8 @@ delBtn.forEach((btn) => {
 cancelBtn.addEventListener("click", () => {
   confirmWrapper.classList.remove("confirm-wrapper-active");
 });
+
+//
 
 // // notification
 // let successText = document.querySelector(".success-text");

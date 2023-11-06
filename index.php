@@ -75,7 +75,7 @@
           <h4 class = "banner-title">The home of  the Innovators</h4>
           <p>we exceed expectations...</p>
           <div class="banner-btn">
-            <a href="other_pages/gallery.php" class="primary-btn">WATCH THE VIDEO <i class = "fas fa-play-circle" ></i> </a>
+            <a href="other_pages/gallery.php#ariel_video" class="primary-btn">WATCH THE VIDEO <i class = "fas fa-play-circle" ></i> </a>
             <a href="other_pages/gallery.php" class="secondary-btn">BROWSE GALLERY </i></a>
           </div>
         </div>
@@ -97,7 +97,7 @@
         <p>
           At the SRC Hall, we provide the most maintained, decent, attractive and comfortable accommodation facility for our students. We also ensure that students get value for money for services rendered at the Hall. In addition, we provide well maintained community oriented facilities where residents and staff are empowered to learn, innovate and succeed in achieving personal and institutional objectives.
         </p>
-        <a href="#" class="primary-btn"> MORE </a>
+        <a href="other_pages/about.php" class="primary-btn"> MORE </a>
       </section>
 <!-- ---------------------------------------------------------------------- -->
 

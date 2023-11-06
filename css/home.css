@@ -35,7 +35,8 @@
 /* core-values-wrapper */
 .core-values-wrapper {
   margin: 0 auto;
-  background: #00000050;
+  background: #00000030;
+  backdrop-filter: blur(10px);
   padding: 50px 0;
   color: #ffffff;
   display: flex;
