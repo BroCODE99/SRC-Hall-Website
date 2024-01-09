@@ -212,7 +212,7 @@
     width: 90%;
   }
   .being-an-innovator-wrapper h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     padding: 0 10px;
     text-align: center;
     line-height: 1;
@@ -227,6 +227,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  header {
+    min-height: 60vh;
+  }
   .core-values-wrapper {
     padding: 50px 10px;
   }

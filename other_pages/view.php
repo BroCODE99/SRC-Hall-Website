@@ -32,7 +32,7 @@
 
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -92,9 +92,9 @@
         <div class="story-body">
             <h3><?= $notice->headline ?></h3>
             <span><?= format_date($notice->news_date); ?></span>
-            <p>
-                <?= $notice->body ?>
-            </p>
+            
+            <?= create_paragraph($notice->body) ?>
+            
             <!-- <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis ut quisquam omnis neque at ipsam nostrum vel tempore distinctio. Neque tempore ducimus amet possimus quibusdam aliquid laboriosam corporis quia omnis saepe quod ullam, mollitia, veniam asperiores nemo? Ex recusandae, non commodi dolores provident consequuntur, earum ullam in laboriosam maxime quis fugit quia? Repellendus ut, necessitatibus facilis porro vitae esse maxime molestias laborum minus nam, nobis neque cumque vel eveniet! Ullam, aliquam quidem pariatur voluptatibus totam, dolorum iusto harum quisquam corrupti voluptas quia sit 
             </p>

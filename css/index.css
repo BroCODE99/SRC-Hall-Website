@@ -333,7 +333,7 @@ footer {
   }
   .sidebar-wrapper {
     display: none;
-    width: 60vw;
+    width: 70vw;
     height: 100vh;
     position: absolute;
     background: #000000;
@@ -343,7 +343,6 @@ footer {
     /* align-items: center; */
     /* justify-content: flex-start; */
     padding: 100px 30px 0 30px;
-    transition: all 0.3s ease-in;
   }
   .sidebar-wrapper-open {
     display: block;
@@ -352,9 +351,10 @@ footer {
     padding: 10px 0;
     border-bottom: 1px solid #ffffff;
     margin: 5px 0;
+    width: 100%;
   }
   .sidebar-wrapper a {
-    color: #daa520;
+    color: #ffc124;
   }
   .sidebar-close-btn {
     position: absolute;

@@ -76,6 +76,21 @@ function validate_text_input($data){
 }
 
 
+function create_paragraph($text){
+    // if (!strpos($text,'#')) {
+    //     return `<p> $text </p>`;
+    // }
+        
+    $paragraph_array = explode('#',$text);
+    $paragraphs = '';
+
+    for ($i = 0; $i < sizeof($paragraph_array); $i++) { 
+        $paragraphs = $paragraphs . '<p>' . ucfirst($paragraph_array[$i]) . '</p>';
+    }
+
+    return $paragraphs;
+}
+
 
 // function generate_account_id($account_type){
 
